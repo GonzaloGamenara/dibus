@@ -99,6 +99,8 @@
       sabOff = Math.max(screen.width, screen.height) - root.clientHeight >= 20;
     }
     root.style.setProperty('--sab', sabOff ? '0px' : 'env(safe-area-inset-bottom, 0px)');
+    root.classList.toggle('sa', isStandalone());
+    root.classList.toggle('sab0', sabOff);
   }
   fit();
   window.addEventListener('resize', fit);

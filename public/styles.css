@@ -368,3 +368,10 @@ label.f { display: block; font-weight: 800; font-size: 13px; color: var(--muted)
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .001s !important; transition-duration: .001s !important; }
 }
+
+/* App instalada en iPhone: iOS difumina el contenido que queda justo debajo de la barra de estado,
+   así que el encabezado baja un poco para que el título se vea nítido. */
+html.sa .top { padding-top: calc(var(--sat) + 30px); }
+html.sa .game { padding-top: calc(var(--sat) + 28px); }
+/* Si el área visible ya termina antes del borde de la pantalla, no hace falta relleno abajo. */
+html.sab0 .tabbar { padding-bottom: 2px; }
