@@ -134,25 +134,99 @@
       if (AC.state !== 'running') AC.resume();
     } catch (e) { /* noop */ }
   }
-  function tone(freq, dur = .12, type = 'sine', vol = .25, when = 0) {
+  /* Sonidos sintetizados (sin archivos): tienen que sonar a juego de mesa, no a alarma de computadora. */
+  // compresor general: evita que se sature cuando suenan varias cosas juntas (fanfarria + aplausos)
+  function out() {
+    if (!AC._out) {
+      const c = AC.createDynamicsCompressor(); c.threshold.value = -14; c.ratio.value = 8;
+      const m = AC.createGain(); m.gain.value = .9; c.connect(m); m.connect(AC.destination); AC._out = c;
+    }
+    return AC._out;
+  }
+  let NB = null;
+  function noiseBuf() {
+    if (NB) return NB;
+    NB = AC.createBuffer(1, AC.sampleRate, AC.sampleRate);
+    const d = NB.getChannelData(0);
+    for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
+    return NB;
+  }
+  // un tono con envolvente rápida; sweep = frecuencia final (para boings y pops)
+  function tone(freq, dur = .12, type = 'sine', vol = .25, when = 0, sweep = 0) {
     if (!S.settings.sound || !AC) return;
     try {
       const t = AC.currentTime + when;
       const o = AC.createOscillator(), g = AC.createGain();
-      o.type = type; o.frequency.value = freq;
+      o.type = type; o.frequency.setValueAtTime(freq, t);
+      if (sweep) o.frequency.exponentialRampToValueAtTime(sweep, t + dur);
       g.gain.setValueAtTime(0.0001, t);
-      g.gain.exponentialRampToValueAtTime(vol, t + .015);
+      g.gain.exponentialRampToValueAtTime(vol, t + .008);
       g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
-      o.connect(g); g.connect(AC.destination);
+      o.connect(g); g.connect(out());
       o.start(t); o.stop(t + dur + .03);
     } catch (e) { /* noop */ }
   }
+  // ruido filtrado: raspados, clicks, aplausos
+  function noise(dur, when, f1, f2, q = 1, vol = .3, type = 'bandpass') {
+    if (!S.settings.sound || !AC) return;
+    try {
+      const t = AC.currentTime + when;
+      const src = AC.createBufferSource(), f = AC.createBiquadFilter(), g = AC.createGain();
+      src.buffer = noiseBuf(); src.loop = true;
+      f.type = type; f.Q.value = q;
+      f.frequency.setValueAtTime(f1, t);
+      if (f2 !== f1) f.frequency.exponentialRampToValueAtTime(f2, t + dur);
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(vol, t + Math.min(.01, dur / 3));
+      g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+      src.connect(f); f.connect(g); g.connect(out());
+      src.start(t, Math.random()); src.stop(t + dur + .03);
+    } catch (e) { /* noop */ }
+  }
+  // campanita metálica (parciales inarmónicos que decaen distinto)
+  function bell(freq, when = 0, vol = .22, dur = .9) {
+    [[1, 1], [2.76, .6], [5.4, .35], [8.93, .2]].forEach(([m, a]) => tone(freq * m, dur / m ** .4, 'sine', vol * a, when));
+  }
+  // trompeta de dibujito: sierra + filtro pasabajos + vibrato
+  function horn(freq, dur, when, vol = .16) {
+    if (!S.settings.sound || !AC) return;
+    try {
+      const t = AC.currentTime + when;
+      const g = AC.createGain(), f = AC.createBiquadFilter(), lfo = AC.createOscillator(), lg = AC.createGain();
+      f.type = 'lowpass'; f.frequency.setValueAtTime(900, t); f.frequency.exponentialRampToValueAtTime(3200, t + .06);
+      lfo.frequency.value = 6; lg.gain.value = freq * .012; lfo.connect(lg);
+      g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(vol, t + .03);
+      g.gain.setValueAtTime(vol, t + dur - .05); g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+      [0, 6].forEach(det => {
+        const o = AC.createOscillator(); o.type = 'sawtooth'; o.frequency.value = freq; o.detune.value = det;
+        lg.connect(o.frequency); o.connect(f); o.start(t); o.stop(t + dur + .05);
+      });
+      f.connect(g); g.connect(out()); lfo.start(t); lfo.stop(t + dur + .05);
+    } catch (e) { /* noop */ }
+  }
+  let tickFlip = false;
   const sfx = {
-    tick: () => tone(880, .09, 'square', .1),
-    go: () => { tone(523, .12, 'triangle', .28); tone(784, .22, 'triangle', .3, .12); },
-    end: () => { [784, 659, 523].forEach((f, i) => tone(f, .26, 'triangle', .32, i * .17)); tone(392, .55, 'triangle', .32, .55); },
-    pick: () => tone(660, .1, 'triangle', .25),
-    win: () => [523, 659, 784, 1047, 784, 1047].forEach((f, i) => tone(f, .2, 'triangle', .28, i * .13))
+    // tic-tac de reloj en los últimos 3 segundos
+    tick: () => { tickFlip = !tickFlip; noise(.045, 0, tickFlip ? 2400 : 1500, tickFlip ? 1800 : 1100, 6, .5); tone(tickFlip ? 1300 : 900, .05, 'triangle', .12); },
+    // arranca la ronda: garabato de lápiz + "plop"
+    go: () => { [0, .09, .18].forEach((w, i) => noise(.09, w, 2600 + i * 500, 5200 - i * 300, 1.4, .32)); tone(300, .14, 'sine', .3, .3, 720); },
+    // se terminó el tiempo: campanita de cocina, riiing
+    end: () => {
+      for (let i = 0; i < 9; i++) { tone(2093, .07, 'sine', .22, i * .075); tone(2637, .07, 'sine', .14, i * .075); }
+      bell(1568, .72, .2, 1.1);
+    },
+    // elegir ganador, apretar un botón: burbuja
+    pick: () => tone(380, .09, 'sine', .3, 0, 900),
+    point: () => { tone(520, .09, 'sine', .26, 0, 880); tone(780, .12, 'sine', .26, .08, 1300); },
+    // cambiar personaje: dado sacudido
+    dice: () => { [0, .07, .13, .2, .25].forEach(w => noise(.03, w + Math.random() * .02, 900 + Math.random() * 900, 700, 3, .4)); tone(180, .08, 'triangle', .18, .3, 120); },
+    add: () => { bell(1760, 0, .18, .5); },
+    // ganó alguien: fanfarria + aplausos
+    win: () => {
+      horn(392, .13, 0); horn(523, .13, .15); horn(659, .13, .3); horn(784, .65, .45, .2);
+      noise(1.6, .5, 2800, 2200, .7, .35);
+      for (let i = 0; i < 14; i++) noise(.04, .55 + i * .09 + Math.random() * .05, 1800 + Math.random() * 1500, 1500, 2, .45);
+    }
   };
   const vib = p => { if (S.settings.vibrate && navigator.vibrate) { try { navigator.vibrate(p); } catch (e) { /* noop */ } } };
 
@@ -696,15 +770,15 @@
     'g-sound'() { S.settings.sound = !S.settings.sound; save(); renderGame(); if (S.settings.sound) { unlockAudio(); sfx.pick(); } },
     'g-pausebtn'() { if (G.userPaused) { G.userPaused = false; releaseTimer(); } else { G.userPaused = true; holdTimer(); } renderGame(); },
     'g-skip'() { G.endAt = Date.now(); G.paused = false; tick(); },
-    'g-reroll'() { const r = curRound(); r.ch = pickChar(); sfx.pick(); vib(20); renderGame(); },
-    'g-add'() { G.endAt += 30000; G.dur += 30000; toast('+30 segundos ⏱️'); tick(); },
+    'g-reroll'() { const r = curRound(); r.ch = pickChar(); sfx.dice(); vib(20); renderGame(); },
+    'g-add'() { G.endAt += 30000; G.dur += 30000; sfx.add(); toast('+30 segundos ⏱️'); tick(); },
     'g-done'() { releaseTimer(); G.userPaused = false; endDraw(); },
     'g-tojudge'() { G.phase = 'judge'; renderGame(); },
     'g-next'() { afterRound(); },
     'g-win'(el) {
       if (G.judging) return;
       const r = curRound(), w = +el.dataset.w;
-      r.winner = w; G.judging = true; sfx.pick(); vib(20); renderGame();
+      r.winner = w; G.judging = true; (w >= 0 ? sfx.point : sfx.pick)(); vib(20); renderGame();
       setTimeout(() => { G.judging = false; if (G) afterRound(); }, 550);
     },
     'g-rwin'(el) { G.rounds[+el.dataset.r].winner = +el.dataset.w; sfx.pick(); renderGame(); },
