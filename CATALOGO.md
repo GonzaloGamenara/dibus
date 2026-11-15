@@ -1,0 +1,1724 @@
+# Catálogo de Dibus
+
+Total: **1634** personajes en **28** categorías.
+
+Formato: `Nombre` · origen. Decime qué sacar, cambiar o agregar por categoría.
+
+## ✏️ Historietas argentinas (33)
+
+- Mafalda · Quino
+- Felipe · Mafalda
+- Manolito · Mafalda
+- Susanita · Mafalda
+- Miguelito · Mafalda
+- Guille · Mafalda
+- Libertad · Mafalda
+- Burocracia, la tortuga · Mafalda
+- El plato de sopa · Mafalda
+- Patoruzú · Dante Quinterno
+- Patoruzito · Dante Quinterno
+- Upa, el caballo · Patoruzú
+- Isidoro Cañones · Dante Quinterno
+- Inodoro Pereyra · Fontanarrosa
+- Mendieta, el perro · Inodoro Pereyra
+- Eulogia · Inodoro Pereyra
+- Boogie el aceitoso · Fontanarrosa
+- El Eternauta · Oesterheld
+- Juan Salvo con el traje aislante · El Eternauta
+- Cascarudo gigante · El Eternauta
+- Gaturro · Nik
+- Ágatha · Gaturro
+- Clemente · Caloi
+- Hijitus · García Ferré
+- Super Hijitus · García Ferré
+- Larguirucho · García Ferré
+- Anteojito · García Ferré
+- Petete · García Ferré
+- Trapito · García Ferré
+- Condorito · Pepo
+- Don Chuma · Condorito
+- Coné · Condorito
+- Martín Fierro · José Hernández
+
+## ⚽ Fútbol y deportistas (62)
+
+- Lionel Messi
+- Diego Maradona
+- Dibu Martínez
+- Ángel Di María · Fideo
+- Julián Álvarez · La Araña
+- Lautaro Martínez · Toro
+- Enzo Fernández
+- Alexis Mac Allister
+- Rodrigo De Paul
+- Nicolás Otamendi
+- Cuti Romero
+- Lisandro Martínez · Licha
+- Lionel Scaloni · DT de la Selección
+- Juan Román Riquelme
+- Gabriel Batistuta · Batigol
+- Mario Kempes · El Matador
+- Daniel Passarella
+- Claudio Caniggia · El Pájaro
+- Carlos Tevez · El Apache
+- Sergio Agüero · Kun
+- Javier Zanetti
+- Hernán Crespo
+- Juan Sebastián Verón · La Brujita
+- Pablo Aimar
+- Martín Palermo
+- Ariel Ortega · El Burrito
+- Marcelo Gallardo · El Muñeco
+- Diego Simeone · El Cholo
+- Marcelo Bielsa · El Loco
+- Franco Colapinto · Fórmula 1
+- Juan Manuel Fangio · Automovilismo
+- Manu Ginóbili · Básquet
+- Luis Scola · Básquet
+- Facundo Campazzo · Básquet
+- Juan Martín del Potro · Tenis
+- Guillermo Vilas · Tenis
+- Gabriela Sabatini · Tenis
+- Luciana Aymar · Las Leonas
+- Paula Pareto · La Peque, judo
+- Carlos Monzón · Boxeo
+- Cristiano Ronaldo
+- Neymar
+- Kylian Mbappé
+- Pelé
+- Ronaldinho
+- Zinedine Zidane
+- Erling Haaland
+- Vinícius Jr.
+- Jude Bellingham
+- Lamine Yamal
+- Johan Cruyff
+- Ronaldo Nazário · El Fenómeno
+- Zlatan Ibrahimović
+- Michael Jordan
+- LeBron James
+- Usain Bolt
+- Roger Federer
+- Rafael Nadal
+- Novak Djokovic
+- Serena Williams
+- Max Verstappen
+- Lewis Hamilton
+
+## 🏛️ Próceres, historia y letras (35)
+
+- José de San Martín
+- Manuel Belgrano
+- Domingo Faustino Sarmiento
+- Juana Azurduy
+- Martín Miguel de Güemes
+- Mariano Moreno
+- Cornelio Saavedra
+- Bernardino Rivadavia
+- Eva Perón · Evita
+- Juan Domingo Perón
+- Hipólito Yrigoyen
+- Raúl Alfonsín
+- Juan Manuel de Rosas
+- Justo José de Urquiza
+- Facundo Quiroga
+- Juan Moreira · Gaucho
+- Mariquita Sánchez de Thompson
+- Jorge Luis Borges
+- Julio Cortázar
+- Ernesto Sabato
+- Alfonsina Storni
+- Roberto Arlt
+- Leopoldo Lugones
+- Ernesto "Che" Guevara
+- Papa Francisco
+- René Favaloro
+- Luis Federico Leloir
+- César Milstein
+- Bernardo Houssay
+- Ramón Carrillo
+- Quino · Dibujante
+- Roberto Fontanarrosa · Dibujante
+- Antonio Berni · Pintor
+- Benito Quinquela Martín · Pintor
+- Lola Mora · Escultora
+
+## 🎤 Música y espectáculo argentino (44)
+
+- Charly García
+- Luis Alberto Spinetta · El Flaco
+- Gustavo Cerati
+- Mercedes Sosa · La Negra
+- Carlos Gardel
+- Astor Piazzolla
+- Indio Solari
+- Fito Páez
+- Andrés Calamaro
+- Pappo
+- León Gieco
+- Sandro · El Gitano
+- Gilda
+- La Mona Jiménez · Cuarteto
+- Rodrigo · El Potro
+- Soledad Pastorutti · La Sole
+- Abel Pintos
+- Diego Torres
+- Lali Espósito
+- Tini Stoessel
+- Duki
+- Bizarrap · Biza
+- Paulo Londra
+- Nicki Nicole
+- María Becerra
+- Wos
+- Trueno
+- Emilia Mernes
+- Milo J
+- Cazzu
+- Susana Giménez
+- Mirtha Legrand · La Chiqui
+- Moria Casán · La One
+- Marcelo Tinelli
+- Guillermo Francella
+- Ricardo Darín
+- Peter Capusotto
+- Micky Vainilla · Capusotto
+- Bombita Rodríguez · Capusotto
+- Tato Bores
+- Alberto Olmedo
+- Jorge Porcel
+- Carlitos Balá · ¡Ñam ñam!
+- Pepe Argento · Casados con hijos
+
+## 🧉 Cosas bien argentinas (56)
+
+- Mate
+- Termo bajo el brazo
+- Bombilla
+- Paquete de yerba
+- Obelisco
+- Casa Rosada
+- Cabildo
+- Cataratas del Iguazú
+- Glaciar Perito Moreno
+- Cerro Aconcagua
+- Cerro Fitz Roy
+- Faro del fin del mundo · Ushuaia
+- Puente de la Mujer
+- Caminito · La Boca
+- La Bombonera
+- El Monumental
+- Kiosco de barrio
+- Bandera argentina
+- Escarapela
+- Sol de Mayo
+- Bombo legüero
+- Guitarra criolla
+- Facón
+- Boleadoras
+- Rastra gaucha
+- Poncho
+- Boina
+- Alpargatas
+- Sombrero de gaucho
+- Gaucho tomando mate
+- Colectivo · El bondi
+- Subte porteño
+- Pareja bailando tango
+- Bandoneón
+- Carnaval de Gualeguaychú
+- Quebrada de Humahuaca
+- Cerro de los Siete Colores
+- Valle de la Luna
+- Teatro Colón
+- Floralis Genérica
+- Congreso de la Nación
+- Pirámide de Mayo
+- Catedral de Buenos Aires
+- Calefón
+- Ventilador de techo
+- Sifón de soda
+- Cuaderno Rivadavia
+- Camiseta de la Selección
+- Copa del Mundo
+- Las tres estrellas
+- Hincha en la tribuna
+- Plaza de barrio
+- Árbol de Navidad con pan dulce
+- Casa chorizo
+- Canillita · Vendedor de diarios
+- Doña Rosa mirando por la ventana
+
+## 🥩 Comida y bebida argentina (54)
+
+- Empanada
+- Asado
+- Parrilla con chorizo y morcilla
+- Choripán
+- Milanesa napolitana
+- Milanesa con papas fritas
+- Dulce de leche
+- Alfajor
+- Medialuna
+- Facturas
+- Vigilante · Queso y batata
+- Pan dulce
+- Ñoquis del 29
+- Locro
+- Humita
+- Tamal
+- Provoleta
+- Matambre a la pizza
+- Chimichurri
+- Fernet con coca
+- Copa de Malbec
+- Mate cocido con facturas
+- Helado de dulce de leche
+- Torta frita
+- Fugazzeta
+- Fainá
+- Pizza de muzzarella
+- Sándwich de miga
+- Lomito completo
+- Pancho · Con papas pay
+- Tira de asado
+- Vacío
+- Chinchulines
+- Mollejas
+- Dulce de batata
+- Flan con dulce de leche
+- Panqueque con dulce de leche
+- Pastafrola
+- Chocotorta
+- Bizcochitos de grasa
+- Alfajor de maicena
+- Garrapiñadas
+- Pochoclo
+- Pastel de papa
+- Revuelto gramajo
+- Carbonada
+- Choclo · Mazorca
+- Sidra en Navidad
+- Vitel toné
+- Tarta de jamón y queso
+- Bondiola
+- Pebete de jamón y queso
+- Submarino · Chocolatada con chocolatín
+- Café con medialunas
+
+## 🐺 Mitos y leyendas argentinas (20)
+
+- El Lobizón · Leyenda guaraní
+- La Luz Mala
+- El Pombero
+- La Llorona
+- El Familiar · Leyenda del norte
+- La Difunta Correa
+- El Gauchito Gil
+- Yasí Yateré
+- Mandinga
+- La Salamanca
+- El Basilisco
+- Nahuelito · Lago Nahuel Huapi
+- La Pachamama
+- El Curupí
+- La Viuda
+- El Futre
+- El Kakuy
+- La Mulánima
+- Los duendes del monte
+- Yacumama
+
+## 🐾 Animales del mundo (107)
+
+- Perro
+- Gato
+- Caballo
+- Vaca
+- Cerdo
+- Oveja
+- Gallina
+- Pato
+- Conejo
+- Elefante
+- Jirafa
+- León
+- Tigre
+- Oso pardo
+- Mono
+- Gorila
+- Cebra
+- Hipopótamo
+- Rinoceronte
+- Cocodrilo
+- Tortuga
+- Serpiente
+- Rana
+- Pez globo
+- Tiburón
+- Delfín
+- Ballena
+- Pulpo
+- Medusa
+- Cangrejo
+- Estrella de mar
+- Mariposa
+- Abeja
+- Hormiga
+- Araña
+- Mosquito
+- Caracol
+- Búho
+- Águila
+- Loro
+- Pingüino
+- Flamenco
+- Pavo real
+- Canguro
+- Koala
+- Panda
+- Perezoso
+- Murciélago
+- Zorro
+- Lobo
+- Ardilla
+- Erizo
+- Castor
+- Nutria
+- Jabalí
+- Camello
+- Llama
+- Alce
+- Ciervo
+- Foca
+- Morsa
+- Oso polar
+- Hámster
+- Chinchilla
+- Mapache
+- Hiena
+- Guepardo
+- Leopardo
+- Pantera negra
+- Ornitorrinco
+- Suricata
+- Tucán
+- Colibrí
+- Cisne
+- Pelícano
+- Gaviota
+- Cuervo
+- Sapo
+- Camaleón
+- Iguana
+- Dragón de Komodo
+- Escorpión
+- Cucaracha
+- Mosca
+- Libélula
+- Luciérnaga
+- Grillo
+- Lombriz
+- Avestruz
+- Gallo
+- Pavo
+- Ganso
+- Burro
+- Cabra
+- Toro
+- Caballito de mar
+- Pez payaso
+- Raya
+- Langosta
+- Mono araña
+- Orangután
+- Lémur
+- Okapi
+- Tapir
+- Narval
+- Manatí
+- Pez espada
+
+## 🦙 Fauna argentina (49)
+
+- Ñandú
+- Guanaco
+- Carpincho
+- Yaguareté
+- Puma
+- Zorro colorado
+- Vizcacha
+- Mulita
+- Quirquincho
+- Hornero
+- Tero
+- Cóndor andino
+- Flamenco austral
+- Yacaré overo
+- Boa curiyú
+- Coipo
+- Pingüino de Magallanes
+- Lobo marino
+- Elefante marino
+- Orca
+- Ballena franca austral
+- Tucán grande
+- Loro hablador
+- Cardenal
+- Jilguero
+- Cuis
+- Peludo
+- Zorrino
+- Huemul
+- Tatú carreta
+- Oso hormiguero
+- Aguará guazú
+- Ocelote
+- Yaguarundí
+- Pecarí
+- Chajá
+- Picaflor
+- Benteveo
+- Calandria
+- Cotorra
+- Carancho
+- Chimango
+- Lechuza de campanario
+- Perro ovejero
+- Caballo criollo
+- Cabrito
+- Vicuña
+- Mara · Liebre patagónica
+- Gato montés
+
+## 🏰 Disney y Pixar (99)
+
+- Mickey Mouse · Disney
+- Minnie Mouse · Disney
+- Pato Donald · Disney
+- Daisy · Disney
+- Goofy · Tribilín
+- Pluto · Disney
+- Tío Rico McPato · Disney
+- Hugo, Paco y Luis · Sobrinos de Donald
+- Chip y Dale · Disney
+- Simba · El Rey León
+- Nala · El Rey León
+- Mufasa · El Rey León
+- Scar · El Rey León
+- Timón y Pumba · El Rey León
+- Rafiki · El Rey León
+- Aladdín · Disney
+- Jazmín · Aladdín
+- El Genio · Aladdín
+- Jafar · Aladdín
+- Abu, el monito · Aladdín
+- Elsa · Frozen
+- Anna · Frozen
+- Olaf · Frozen
+- Kristoff y Sven · Frozen
+- Moana · Disney
+- Maui · Moana
+- Mulán · Disney
+- Mushu · Mulán
+- Rapunzel · Enredados
+- Pascal · Enredados
+- Bella · La Bella y la Bestia
+- La Bestia · La Bella y la Bestia
+- Lumière · La Bella y la Bestia
+- Gastón · La Bella y la Bestia
+- Ariel · La Sirenita
+- Sebastián · La Sirenita
+- Úrsula · La Sirenita
+- Cenicienta · Disney
+- Blancanieves · Disney
+- Pinocho · Disney
+- Pepe Grillo · Pinocho
+- Peter Pan · Disney
+- Campanita · Peter Pan
+- Capitán Garfio · Peter Pan
+- Bambi · Disney
+- Tambor · Bambi
+- Dumbo · Disney
+- Baloo · El libro de la selva
+- Mowgli · El libro de la selva
+- Winnie Pooh · Disney
+- Tigger · Winnie Pooh
+- Igor · Winnie Pooh
+- Piglet · Winnie Pooh
+- Stitch · Lilo y Stitch
+- Lilo · Lilo y Stitch
+- Woody · Toy Story
+- Buzz Lightyear · Toy Story
+- Jessie · Toy Story
+- Rex · Toy Story
+- Sr. Cara de Papa · Toy Story
+- Lotso · Toy Story
+- Sulley · Monsters Inc.
+- Mike Wazowski · Monsters Inc.
+- Boo · Monsters Inc.
+- Nemo · Buscando a Nemo
+- Dory · Buscando a Nemo
+- Marlin · Buscando a Nemo
+- WALL·E · Pixar
+- EVA · WALL·E
+- Remy · Ratatouille
+- Carl · Up
+- Dug · Up
+- Russell · Up
+- Joy · Intensa-Mente
+- Tristeza · Intensa-Mente
+- Ira · Intensa-Mente
+- Miguel · Coco
+- Dante · Coco
+- Rayo McQueen · Cars
+- Mate · Cars
+- Elastigirl · Los Increíbles
+- Sr. Increíble · Los Increíbles
+- Edna Moda · Los Increíbles
+- Merida · Valiente
+- Baymax · Big Hero 6
+- Mirabel · Encanto
+- Bruno · Encanto
+- Judy Hopps · Zootrópolis
+- Nick Wilde · Zootrópolis
+- Hércules · Disney
+- Tarzán · Disney
+- Quasimodo · El Jorobado de Notre Dame
+- Pocahontas · Disney
+- Robin Hood · Disney
+- Los Aristogatos · Disney
+- Lady y el Vagabundo · Disney
+- Los 101 Dálmatas · Disney
+- Cruella de Vil · Disney
+- Maléfica · Disney
+
+## 📺 Dibujos clásicos (66)
+
+- Bugs Bunny · Looney Tunes
+- Pato Lucas · Looney Tunes
+- Porky · Looney Tunes
+- Piolín · Looney Tunes
+- Silvestre · Looney Tunes
+- Speedy Gonzales · Looney Tunes
+- Correcaminos · Looney Tunes
+- Coyote · Looney Tunes
+- Demonio de Tasmania · Looney Tunes
+- Pepe el Zorrillo · Looney Tunes
+- Elmer Gruñón · Looney Tunes
+- Sam Bigotes · Looney Tunes
+- Gallo Claudio · Looney Tunes
+- Marvin el Marciano · Looney Tunes
+- Pedro Picapiedra · Los Picapiedra
+- Pablo Mármol · Los Picapiedra
+- Vilma Picapiedra · Los Picapiedra
+- Betty Mármol · Los Picapiedra
+- Dino · Los Picapiedra
+- Bam-Bam · Los Picapiedra
+- George Jetson · Los Supersónicos
+- Rosie la robot · Los Supersónicos
+- Scooby-Doo
+- Shaggy · Scooby-Doo
+- Daphne · Scooby-Doo
+- Vilma · Scooby-Doo
+- Fred · Scooby-Doo
+- Oso Yogui · Hanna-Barbera
+- Bubu · Oso Yogui
+- Don Gato · Don Gato y su pandilla
+- Tom · Tom y Jerry
+- Jerry · Tom y Jerry
+- Pantera Rosa
+- Popeye · Popeye el marino
+- Olivia · Popeye
+- Brutus · Popeye
+- Betty Boop
+- Felix el Gato
+- Garfield
+- Odie · Garfield
+- Snoopy · Charlie Brown
+- Charlie Brown
+- Woodstock · Snoopy
+- Pierre Nodoyuna · Los Autos Locos
+- Patán · Los Autos Locos
+- Meteoro · Speed Racer
+- Inspector Gadget
+- Heidi · Anime clásico
+- Mazinger Z
+- Candy Candy
+- He-Man
+- Skeletor · He-Man
+- She-Ra
+- Leonardo · Tortugas Ninja
+- Donatello · Tortugas Ninja
+- Rafael · Tortugas Ninja
+- Miguel Ángel · Tortugas Ninja
+- Splinter · Tortugas Ninja
+- Lion-O · Thundercats
+- Cheetara · Thundercats
+- Papá Pitufo · Los Pitufos
+- Pitufina · Los Pitufos
+- Gargamel · Los Pitufos
+- Capitán Planeta
+- Ositos Cariñositos
+- Ositos Gummi
+
+## 🎨 Dibujos modernos (81)
+
+- Bob Esponja · Nickelodeon
+- Patricio Estrella · Bob Esponja
+- Calamardo · Bob Esponja
+- Don Cangrejo · Bob Esponja
+- Arenita · Bob Esponja
+- Plankton · Bob Esponja
+- Gary el caracol · Bob Esponja
+- Dexter · Laboratorio de Dexter
+- Dee Dee · Laboratorio de Dexter
+- Johnny Bravo
+- Bombón · Las Chicas Superpoderosas
+- Burbuja · Las Chicas Superpoderosas
+- Bellota · Las Chicas Superpoderosas
+- Mojo Jojo · Las Chicas Superpoderosas
+- Ben 10
+- Billy · Billy y Mandy
+- Mandy · Billy y Mandy
+- Coraje · El perro cobarde
+- La Vaca y el Pollito
+- Ed, Edd y Eddy
+- Samurai Jack
+- Finn · Hora de Aventura
+- Jake el perro · Hora de Aventura
+- Princesa Chicle · Hora de Aventura
+- Rey Helado · Hora de Aventura
+- BMO · Hora de Aventura
+- Mordecai y Rigby · Un show más
+- Gumball · El increíble mundo de Gumball
+- Darwin · Gumball
+- Steven Universe
+- Robin · Jóvenes Titanes
+- Raven · Jóvenes Titanes
+- Starfire · Jóvenes Titanes
+- Chico Bestia · Jóvenes Titanes
+- Phineas · Phineas y Ferb
+- Ferb · Phineas y Ferb
+- Perry el ornitorrinco · Phineas y Ferb
+- Doofenshmirtz · Phineas y Ferb
+- Tommy Pickles · Rugrats
+- Jimmy Neutrón
+- Timmy Turner · Los Padrinos Mágicos
+- Cosmo · Los Padrinos Mágicos
+- Wanda · Los Padrinos Mágicos
+- Aang · Avatar
+- Zuko · Avatar
+- Katara · Avatar
+- Appa · Avatar
+- Toph · Avatar
+- Kim Possible
+- Peter Griffin · Padre de Familia
+- Stewie · Padre de Familia
+- Brian · Padre de Familia
+- Lois · Padre de Familia
+- Cartman · South Park
+- Kenny · South Park
+- Kyle · South Park
+- Stan · South Park
+- Rick Sánchez · Rick y Morty
+- Morty · Rick y Morty
+- Pickle Rick · Rick y Morty
+- Fry · Futurama
+- Leela · Futurama
+- Bender · Futurama
+- Profesor Farnsworth · Futurama
+- Zoidberg · Futurama
+- Bluey
+- Bingo · Bluey
+- Peppa Pig
+- Pocoyó
+- Chase · Paw Patrol
+- Marshall · Paw Patrol
+- Skye · Paw Patrol
+- Gru · Mi Villano Favorito
+- Minion Kevin · Mi Villano Favorito
+- Minion Stuart · Mi Villano Favorito
+- Minion Bob · Mi Villano Favorito
+- Zamba · La asombrosa excursión de Zamba
+- Nito · Zamba
+- Niña · Zamba
+- La vaca Connie · La Granja de Zenón
+- El gallo Kirico · La Granja de Zenón
+
+## 🍩 Los Simpson (34)
+
+- Homero Simpson
+- Marge Simpson
+- Bart Simpson
+- Lisa Simpson
+- Maggie Simpson
+- Abraham "Abe" Simpson
+- Ned Flanders
+- Moe Szyslak
+- Barney Gómez
+- Krusty el Payaso
+- Sr. Burns
+- Smithers
+- Milhouse
+- Nelson Muntz
+- Ralph Wiggum
+- Jefe Gorgory
+- Apu
+- Dr. Hibbert
+- Director Skinner
+- Edna Krabappel
+- Patty y Selma
+- Cletus
+- Kang y Kodos
+- Hombre Abeja
+- Vendedor de cómics
+- Bob Patiño
+- Troy McClure
+- Lenny y Carl
+- Ayudante de Santa
+- Bola de Nieve
+- Duffman
+- Reverendo Lovejoy
+- Homero con una dona
+- La casa de los Simpson
+
+## 🍥 Anime y manga (78)
+
+- Goku · Dragon Ball
+- Vegeta · Dragon Ball
+- Gohan · Dragon Ball
+- Piccolo · Dragon Ball
+- Krilin · Dragon Ball
+- Freezer · Dragon Ball
+- Cell · Dragon Ball
+- Majin Buu · Dragon Ball
+- Bulma · Dragon Ball
+- Maestro Roshi · Dragon Ball
+- Trunks · Dragon Ball
+- Shenlong · Dragon Ball
+- Naruto Uzumaki · Naruto
+- Sasuke · Naruto
+- Kakashi · Naruto
+- Sakura · Naruto
+- Itachi · Naruto
+- Gaara · Naruto
+- Luffy · One Piece
+- Zoro · One Piece
+- Nami · One Piece
+- Sanji · One Piece
+- Chopper · One Piece
+- Usopp · One Piece
+- Shanks · One Piece
+- Seiya de Pegaso · Los Caballeros del Zodíaco
+- Shiryu de Dragón · Los Caballeros del Zodíaco
+- Hyoga de Cisne · Los Caballeros del Zodíaco
+- Shun de Andrómeda · Los Caballeros del Zodíaco
+- Ikki de Fénix · Los Caballeros del Zodíaco
+- Saori Kido · Los Caballeros del Zodíaco
+- Sailor Moon
+- Sailor Mars · Sailor Moon
+- Tuxedo Mask · Sailor Moon
+- Doraemon
+- Nobita · Doraemon
+- Shin-chan
+- Totoro · Studio Ghibli
+- Chihiro · El viaje de Chihiro
+- Sin Cara · El viaje de Chihiro
+- Kiki · Studio Ghibli
+- Ponyo · Studio Ghibli
+- Howl · El castillo ambulante
+- Calcifer · El castillo ambulante
+- Light Yagami · Death Note
+- L · Death Note
+- Ryuk · Death Note
+- Eren Jaeger · Ataque a los Titanes
+- Mikasa · Ataque a los Titanes
+- Levi · Ataque a los Titanes
+- Tanjiro · Demon Slayer
+- Nezuko · Demon Slayer
+- Zenitsu · Demon Slayer
+- Inosuke · Demon Slayer
+- Deku · My Hero Academia
+- All Might · My Hero Academia
+- Bakugo · My Hero Academia
+- Shinji · Evangelion
+- Rei Ayanami · Evangelion
+- Asuka · Evangelion
+- Agumon · Digimon
+- Gabumon · Digimon
+- Yugi · Yu-Gi-Oh!
+- Mago Oscuro · Yu-Gi-Oh!
+- Dragón Blanco de Ojos Azules · Yu-Gi-Oh!
+- Ranma · Ranma 1/2
+- Inuyasha
+- Lupin III
+- Astro Boy
+- Sakura Card Captors
+- Tyson · Beyblade
+- Gon · Hunter x Hunter
+- Killua · Hunter x Hunter
+- Saitama · One Punch Man
+- Gojo · Jujutsu Kaisen
+- Yuji Itadori · Jujutsu Kaisen
+- Pochita · Chainsaw Man
+- Anya · Spy x Family
+
+## ⚡ Pokémon (107)
+
+- Pikachu
+- Raichu
+- Charmander
+- Charmeleon
+- Charizard
+- Bulbasaur
+- Ivysaur
+- Venusaur
+- Squirtle
+- Wartortle
+- Blastoise
+- Caterpie
+- Butterfree
+- Pidgey
+- Rattata
+- Sandshrew
+- Clefairy
+- Vulpix
+- Ninetales
+- Jigglypuff
+- Zubat
+- Oddish
+- Paras
+- Psyduck
+- Growlithe
+- Arcanine
+- Poliwhirl
+- Abra
+- Machop
+- Geodude
+- Ponyta
+- Slowpoke
+- Magnemite
+- Farfetch'd
+- Doduo
+- Seel
+- Grimer
+- Shellder
+- Gastly
+- Haunter
+- Gengar
+- Onix
+- Drowzee
+- Krabby
+- Voltorb
+- Exeggutor
+- Cubone
+- Hitmonlee
+- Lickitung
+- Koffing
+- Rhydon
+- Chansey
+- Tangela
+- Kangaskhan
+- Horsea
+- Goldeen
+- Staryu
+- Mr. Mime
+- Scyther
+- Jynx
+- Electabuzz
+- Magmar
+- Pinsir
+- Tauros
+- Magikarp
+- Gyarados
+- Lapras
+- Ditto
+- Eevee
+- Vaporeon
+- Jolteon
+- Flareon
+- Porygon
+- Omanyte
+- Aerodactyl
+- Snorlax
+- Articuno
+- Zapdos
+- Moltres
+- Dratini
+- Dragonite
+- Mewtwo
+- Mew
+- Togepi
+- Lucario
+- Greninja
+- Gardevoir
+- Umbreon
+- Espeon
+- Mimikyu
+- Rayquaza
+- Garchomp
+- Sylveon
+- Lugia
+- Torchic
+- Mudkip
+- Treecko
+- Piplup
+- Chimchar
+- Turtwig
+- Meowth
+- Ash Ketchum · Pokémon
+- Misty · Pokémon
+- Brock · Pokémon
+- Jessie y James · Equipo Rocket
+- Profesor Oak · Pokémon
+- Pokébola
+
+## 🎮 Videojuegos (83)
+
+- Mario · Super Mario
+- Luigi · Super Mario
+- Princesa Peach · Super Mario
+- Bowser · Super Mario
+- Toad · Super Mario
+- Yoshi · Super Mario
+- Donkey Kong
+- Diddy Kong · Donkey Kong
+- Wario · Super Mario
+- Waluigi · Super Mario
+- Boo · Super Mario
+- Goomba · Super Mario
+- Koopa Troopa · Super Mario
+- Bullet Bill · Super Mario
+- Planta Piraña · Super Mario
+- Hongo rojo · Super Mario
+- Link · Zelda
+- Zelda · The Legend of Zelda
+- Ganondorf · Zelda
+- Navi · Zelda
+- Epona · Zelda
+- Sonic · Sega
+- Tails · Sonic
+- Knuckles · Sonic
+- Dr. Eggman · Sonic
+- Shadow · Sonic
+- Pac-Man
+- Fantasma Blinky · Pac-Man
+- Kirby
+- Meta Knight · Kirby
+- Rey Dedede · Kirby
+- Samus Aran · Metroid
+- Fox McCloud · Star Fox
+- Captain Falcon · F-Zero
+- Mega Man
+- Ryu · Street Fighter
+- Chun-Li · Street Fighter
+- Ken · Street Fighter
+- Sub-Zero · Mortal Kombat
+- Scorpion · Mortal Kombat
+- Crash Bandicoot
+- Spyro
+- Lara Croft · Tomb Raider
+- Master Chief · Halo
+- Creeper · Minecraft
+- Steve · Minecraft
+- Enderman · Minecraft
+- Tripulante · Among Us
+- Impostor · Among Us
+- Fall Guy · Fall Guys
+- Jonesy · Fortnite
+- Peely, la banana · Fortnite
+- Llama · Fortnite
+- Red · Angry Birds
+- Cerdito verde · Angry Birds
+- Flappy Bird
+- Pieza de Tetris
+- Invasor espacial · Space Invaders
+- Cuphead
+- Mugman · Cuphead
+- Hollow Knight
+- Sackboy · LittleBigPlanet
+- Rayman
+- Kratos · God of War
+- Solid Snake · Metal Gear
+- Cloud Strife · Final Fantasy
+- Sephiroth · Final Fantasy
+- Pikmin
+- Slime · Dragon Quest
+- Isabelle · Animal Crossing
+- Tom Nook · Animal Crossing
+- Bomberman
+- Banjo y Kazooie
+- Perro de Duck Hunt
+- Noob · Roblox
+- Rey de Clash Royale
+- Shelly · Brawl Stars
+- Auto · Rocket League
+- Doomguy · Doom
+- Ezio Auditore · Assassin's Creed
+- Tamagotchi
+- Game Boy
+- Joystick
+
+## 🎬 Películas y series (88)
+
+- Darth Vader · Star Wars
+- Yoda · Star Wars
+- Luke Skywalker · Star Wars
+- Princesa Leia · Star Wars
+- Han Solo · Star Wars
+- Chewbacca · Star Wars
+- R2-D2 · Star Wars
+- C-3PO · Star Wars
+- Stormtrooper · Star Wars
+- Grogu · The Mandalorian
+- Jar Jar Binks · Star Wars
+- Boba Fett · Star Wars
+- Harry Potter
+- Hermione · Harry Potter
+- Ron Weasley · Harry Potter
+- Hagrid · Harry Potter
+- Dumbledore · Harry Potter
+- Voldemort · Harry Potter
+- Dobby · Harry Potter
+- Hedwig · Harry Potter
+- Gandalf · El Señor de los Anillos
+- Frodo · El Señor de los Anillos
+- Gollum · El Señor de los Anillos
+- Legolas · El Señor de los Anillos
+- El Ojo de Sauron · El Señor de los Anillos
+- Smaug · El Hobbit
+- Shrek
+- Burro · Shrek
+- Fiona · Shrek
+- Gato con Botas · Shrek
+- Lord Farquaad · Shrek
+- Jack Sparrow · Piratas del Caribe
+- Indiana Jones
+- James Bond
+- Rocky Balboa
+- Terminator
+- Forrest Gump
+- Marty McFly · Volver al Futuro
+- Doc Brown · Volver al Futuro
+- El DeLorean · Volver al Futuro
+- E.T.
+- Gizmo · Gremlins
+- Malvavisco gigante · Los Cazafantasmas
+- Tiranosaurio Rex · Jurassic Park
+- Velociraptor · Jurassic Park
+- King Kong
+- Godzilla
+- El tiburón · Tiburón
+- Chucky
+- Freddy Krueger
+- Pennywise · It
+- Beetlejuice
+- Eduardo Manos de Tijera
+- Willy Wonka
+- Matilda
+- Po · Kung Fu Panda
+- Alex el león · Madagascar
+- Marty la cebra · Madagascar
+- Los pingüinos · Madagascar
+- Scrat · La Era de Hielo
+- Manny · La Era de Hielo
+- Sid · La Era de Hielo
+- Chimuelo · Cómo entrenar a tu dragón
+- Hipo · Cómo entrenar a tu dragón
+- Walter White · Breaking Bad
+- Jesse Pinkman · Breaking Bad
+- Eleven · Stranger Things
+- Demogorgon · Stranger Things
+- El Profesor · La Casa de Papel
+- Tokio · La Casa de Papel
+- Máscara de Dalí · La Casa de Papel
+- Soldado rosa · El Juego del Calamar
+- Muñeca gigante · El Juego del Calamar
+- Merlina Addams · Merlina
+- Cosa · Los Locos Addams
+- Jon Snow · Game of Thrones
+- Daenerys · Game of Thrones
+- Tyrion · Game of Thrones
+- Dragón · Game of Thrones
+- Sheldon Cooper · The Big Bang Theory
+- Mr. Bean
+- Charles Chaplin · Charlot
+- Neo · Matrix
+- Na'vi · Avatar
+- Jack Dawson · Titanic
+- Barbie
+- Mad Max
+- Katniss Everdeen · Los Juegos del Hambre
+
+## 📼 TV nostálgica (31)
+
+- El Chavo del 8
+- El Chapulín Colorado
+- Quico · El Chavo
+- Doña Florinda · El Chavo
+- Don Ramón · El Chavo
+- La Chilindrina · El Chavo
+- Profesor Jirafales · El Chavo
+- Doña Clotilde · La Bruja del 71
+- Barney · El dinosaurio
+- Tinky Winky · Teletubbies
+- Elmo · Plaza Sésamo
+- Epi y Blas · Plaza Sésamo
+- Kermit · Los Muppets
+- Miss Piggy · Los Muppets
+- Gonzo · Los Muppets
+- Animal · Los Muppets
+- El Zorro
+- Capitán Piluso
+- Pipo Pescador
+- Floricienta
+- Chiquititas
+- Los Locos Addams
+- Los Monsters
+- Kitt · El auto fantástico
+- MacGyver
+- Power Ranger rojo
+- Power Ranger azul
+- Zordon · Power Rangers
+- Rin Tin Tin
+- Lassie
+- Súper Agente 86
+
+## 🦸 Superhéroes y villanos (50)
+
+- Superman · DC
+- Batman · DC
+- Wonder Woman · DC
+- Flash · DC
+- Aquaman · DC
+- Linterna Verde · DC
+- Cyborg · DC
+- Joker · DC
+- Harley Quinn · DC
+- Pingüino · Batman
+- Catwoman · Batman
+- Robin · Batman
+- Batichica · Batman
+- Lex Luthor · Superman
+- Bane · Batman
+- Spider-Man · Marvel
+- Iron Man · Marvel
+- Capitán América · Marvel
+- Thor · Marvel
+- Hulk · Marvel
+- Viuda Negra · Marvel
+- Ojo de Halcón · Marvel
+- Pantera Negra · Marvel
+- Doctor Strange · Marvel
+- Capitana Marvel · Marvel
+- Ant-Man · Marvel
+- Wolverine · X-Men
+- Deadpool · Marvel
+- Thanos · Marvel
+- Loki · Marvel
+- Groot · Guardianes de la Galaxia
+- Rocket · Guardianes de la Galaxia
+- Star-Lord · Guardianes de la Galaxia
+- Venom · Marvel
+- Magneto · X-Men
+- Profesor X · X-Men
+- Tormenta · X-Men
+- Cíclope · X-Men
+- Bestia · X-Men
+- Ghost Rider · Marvel
+- Daredevil · Marvel
+- Silver Surfer · Marvel
+- Galactus · Marvel
+- Mr. Fantástico · Los 4 Fantásticos
+- La Mole · Los 4 Fantásticos
+- Antorcha Humana · Los 4 Fantásticos
+- Hellboy
+- Spawn
+- Invencible
+- Ultraman
+
+## 🐉 Fantasía y monstruos (70)
+
+- Dragón
+- Unicornio
+- Hada
+- Sirena
+- Duende
+- Gnomo
+- Troll
+- Ogro
+- Elfo
+- Mago
+- Bruja
+- Hechicero
+- Vampiro
+- Momia
+- Zombi
+- Frankenstein
+- Drácula
+- Hombre lobo
+- Fantasma
+- Esqueleto
+- Yeti
+- Pie Grande
+- Monstruo del Lago Ness
+- Kraken
+- Minotauro
+- Cíclope
+- Medusa
+- Pegaso
+- Grifo
+- Ave Fénix
+- Quimera
+- Hidra
+- Cerbero
+- Centauro
+- Sátiro
+- Genio de la lámpara
+- Esfinge
+- Golem
+- Gárgola
+- Leprechaun
+- Robot
+- Alienígena
+- OVNI
+- Marciano
+- Astronauta
+- Cyborg
+- Tiranosaurio Rex
+- Triceratops
+- Velociraptor
+- Estegosaurio
+- Pterodáctilo
+- Brontosaurio
+- Mamut
+- Tigre dientes de sable
+- Hombre de las cavernas
+- Caballero medieval
+- Pirata
+- Ninja
+- Samurái
+- Vikingo
+- Gladiador romano
+- Cowboy
+- Princesa
+- Rey
+- Reina
+- Príncipe
+- Payaso
+- Mago de circo
+- Monstruo del clóset
+- Zombi comiendo empanadas
+
+## 🔧 Objetos de todos los días (109)
+
+- Silla
+- Mesa
+- Cama
+- Sillón
+- Lámpara
+- Ventilador
+- Heladera
+- Cocina
+- Microondas
+- Licuadora
+- Tostadora
+- Pava eléctrica
+- Olla
+- Sartén
+- Cuchara
+- Tenedor
+- Cuchillo
+- Taza
+- Vaso
+- Botella
+- Plato
+- Escoba
+- Balde
+- Plancha
+- Lavarropas
+- Televisor
+- Control remoto
+- Celular
+- Auriculares
+- Computadora
+- Teclado
+- Mouse
+- Cámara de fotos
+- Reloj
+- Despertador
+- Anteojos
+- Paraguas
+- Mochila
+- Valija
+- Zapatilla
+- Zapato
+- Ojota
+- Remera
+- Campera
+- Gorro de lana
+- Bufanda
+- Guantes
+- Corbata
+- Sombrero
+- Anillo
+- Corona
+- Llave
+- Candado
+- Martillo
+- Destornillador
+- Serrucho
+- Taladro
+- Tijera
+- Lápiz
+- Birome
+- Goma de borrar
+- Regla
+- Cuaderno
+- Libro
+- Mapa
+- Brújula
+- Lupa
+- Telescopio
+- Microscopio
+- Guitarra
+- Piano
+- Batería
+- Trompeta
+- Violín
+- Micrófono
+- Radio
+- Pelota
+- Bicicleta
+- Monopatín
+- Barrilete
+- Trompo
+- Muñeca
+- Osito de peluche
+- Rompecabezas
+- Dado
+- Naipes · Truco
+- Globo
+- Regalo
+- Torta de cumpleaños
+- Vela
+- Pileta inflable
+- Reposera
+- Carpa
+- Fogata
+- Linterna
+- Escalera
+- Cohete de juguete
+- Inodoro
+- Bañera
+- Cepillo de dientes
+- Espejo
+- Peine
+- Secador de pelo
+- Jabón
+- Carrito de supermercado
+- Cajero automático
+- Semáforo
+- Buzón
+- Cesto de basura
+
+## 🍕 Más comida y frutas (59)
+
+- Pizza
+- Hamburguesa
+- Papas fritas
+- Pancho · Hot dog
+- Sushi
+- Tacos
+- Burrito
+- Ramen
+- Dona
+- Cupcake
+- Helado de cucurucho
+- Chupetín
+- Caramelo
+- Chocolate
+- Tostadas
+- Huevo frito
+- Banana
+- Manzana
+- Frutilla
+- Sandía
+- Ananá
+- Durazno
+- Uvas
+- Pera
+- Naranja
+- Limón
+- Palta
+- Zanahoria
+- Tomate
+- Papa
+- Zapallo
+- Brócoli
+- Cebolla
+- Ajo
+- Hongo
+- Morrón
+- Lechuga
+- Queso
+- Jamón
+- Waffle
+- Panqueque
+- Café
+- Licuado
+- Gaseosa
+- Cerveza
+- Sándwich
+- Spaghetti
+- Ravioles
+- Ensalada
+- Pan
+- Algodón de azúcar
+- Torta de chocolate
+- Cereza
+- Coco
+- Kiwi
+- Mango
+- Pepino
+- Maní
+- Nuez
+
+## 🚗 Vehículos y transporte (39)
+
+- Colectivo · Bondi
+- Subte
+- Tren
+- Taxi
+- Remís
+- Moto
+- Bicicleta
+- Monopatín
+- Patines
+- Auto de carrera
+- Fitito · Fiat 600
+- Camión
+- Tractor
+- Ambulancia
+- Patrullero
+- Camión de bomberos
+- Helicóptero
+- Avión
+- Globo aerostático
+- Cohete
+- Nave espacial
+- Barco
+- Velero
+- Submarino
+- Lancha
+- Canoa
+- Trineo
+- Carreta gaucha
+- Carruaje
+- Tranvía
+- Teleférico
+- Excavadora
+- Grúa
+- Camioneta
+- Auto antiguo · Renault 12
+- Camión mixer
+- Tren bala
+- Moto con tres personas
+- Bici con canasto
+
+## 👷 Profesiones y gente de barrio (45)
+
+- Bombero
+- Médica
+- Policía
+- Albañil
+- Plomero
+- Carnicero
+- Taxista
+- Colectivero
+- Kiosquero
+- Verdulero
+- Maestra
+- Cartero
+- Mozo
+- DT de fútbol
+- Árbitro
+- Remisero
+- Jardinero
+- Astronauta
+- Payaso
+- Mago
+- Pirata
+- Cocinero
+- Panadero
+- Peluquero
+- Dentista
+- Veterinario
+- Piloto de avión
+- Marinero
+- Pescador
+- Granjero
+- Gaucho
+- Cantante
+- Guitarrista
+- Bailarín de tango
+- Pintor
+- Escritor
+- Científico loco
+- Detective
+- Asador · Rey del asado
+- Cajera de supermercado
+- Repartidor en bici
+- Estatua viviente
+- Jubilado mirando la obra
+- Vecino regando la vereda
+- Hincha cantando
+
+## 🏞️ Lugares y monumentos (42)
+
+- Playa
+- Montaña
+- Volcán
+- Cascada
+- Desierto
+- Isla desierta
+- Selva
+- Glaciar
+- Pampa
+- Cueva
+- Faro
+- Castillo
+- Iglesia
+- Estadio de fútbol
+- Rascacielos
+- Granja
+- Lago
+- Puente colgante
+- Torre Eiffel
+- Estatua de la Libertad
+- Coliseo romano
+- Pirámides de Egipto
+- Cristo Redentor
+- Torre de Pisa
+- Taj Mahal
+- Muralla China
+- Big Ben
+- Machu Picchu
+- Ópera de Sídney
+- Plaza con palomas
+- Parque de diversiones
+- Calesita · Calesita de plaza
+- Casa en el árbol
+- Iglú
+- Casa embrujada
+- Base lunar
+- Fondo del mar
+- Isla con palmera
+- Rancho gaucho
+- Cancha de barrio
+- Estación de tren
+- Farmacia de turno
+
+## 🏅 Deportes y juegos (37)
+
+- Jugando al fútbol
+- Jugando al rugby · Los Pumas
+- Jugando al hockey · Las Leonas
+- Jugando al básquet
+- Jugando al tenis
+- Jugando al pádel
+- Jugando al truco
+- Jugando a la pelota paleta
+- Jugando al polo
+- Esquiando
+- Surfeando
+- Boxeando
+- Nadando
+- Pedaleando en bici
+- Andando a caballo
+- Haciendo esgrima
+- Practicando yoga
+- Jugando al ajedrez
+- Jugando a las bochas
+- Jugando a la rayuela
+- Jugando a las escondidas
+- Saltando la soga
+- Jugando a la mancha
+- Jugando al metegol
+- Jugando al ping pong
+- Corriendo una maratón
+- Patinando sobre hielo
+- Haciendo escalada
+- Levantando pesas
+- Pateando un penal
+- Arquero atajando un penal
+- Gol de chilena
+- Dando la vuelta olímpica
+- Jugando a la PlayStation
+- Jugando a las figuritas
+- Jugando al pool
+- Piloto de carreras
+
+## 😎 Memes y bichos de internet (19)
+
+- Doge
+- Pepe la rana
+- Nyan Cat
+- Trollface
+- Gigachad
+- Baby Yoda
+- Chico del pulgar arriba
+- Mono pensando
+- Perro en la casa en llamas · This is fine
+- Wojak
+- Pikachu sorprendido
+- Cheems
+- Rick Astley · Rickroll
+- Sr. Cangrejo contando plata
+- Mono con celular
+- Perro con anteojos de sol
+- Emoji llorando de risa
+- Emoji de la caca sonriente
+- Huevo con patas
+
+## 🎭 Escenas y situaciones (37)
+
+- Tomando mate en la plaza
+- Esperando el colectivo bajo la lluvia
+- Un asado con amigos
+- Una familia comiendo ñoquis el 29
+- Un hincha en la cancha
+- Un gaucho tomando mate
+- Un gato en el techo
+- Un perro paseando a una persona
+- Viaje en el bondi lleno
+- Sacando la basura en pijama
+- Un pibe pateando una pelota
+- Una abuela cocinando empanadas
+- Un asador con delantal
+- Una familia mirando la tele
+- El cumpleaños de un nene
+- Un robot comiendo pizza
+- Un dinosaurio en el subte
+- Un pingüino tomando mate
+- Un astronauta en un asado
+- Un vampiro tomando sol
+- Un perro conduciendo un auto
+- Una vaca en bicicleta
+- Un tiburón en la pileta
+- Un pulpo tocando la batería
+- Un elefante en un ascensor
+- Un pájaro leyendo el diario
+- Un alien en la Plaza de Mayo
+- Un gigante en el Obelisco
+- Un payaso triste esperando el tren
+- Un mago sacando un conejo de un termo
+- Un pirata en el Tigre
+- Una jirafa en el colectivo
+- Un dragón escupiendo fuego en el asado
+- Un señor corriendo al colectivo
+- Una tormenta de empanadas
+- Un fantasma con la camiseta de Boca
+- Un oso polar tomando fernet
+
