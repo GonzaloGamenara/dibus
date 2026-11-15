@@ -36,10 +36,10 @@
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-html, body { height: 100%; margin: 0; }
-html { background: var(--card); -webkit-text-size-adjust: 100%; }
+html, body { margin: 0; position: fixed; inset: 0; width: 100%; height: 100%; overflow: hidden; background: var(--card); overscroll-behavior: none; }
+html { -webkit-text-size-adjust: 100%; }
 body {
-  background: var(--bg); color: var(--ink); font-family: var(--font);
+  color: var(--ink); font-family: var(--font);
   font-size: 16px; line-height: 1.35; -webkit-font-smoothing: antialiased;
   overscroll-behavior: none; touch-action: manipulation;
   -webkit-user-select: none; user-select: none; -webkit-touch-callout: none;
@@ -50,7 +50,7 @@ button { font-family: inherit; color: inherit; }
 h1, h2, h3, p { margin: 0; }
 
 /* ---------- shell ---------- */
-#app, .game, .sheet { position: fixed; top: 0; left: 0; right: 0; height: var(--app-h, 100%); }
+#app, .game, .sheet { position: fixed; inset: 0; }
 #app { display: flex; flex-direction: column; }
 
 .top {
@@ -64,7 +64,7 @@ h1, h2, h3, p { margin: 0; }
 .tag { font-size: 12.5px; opacity: .72; margin-top: 3px; font-weight: 700; }
 
 .view {
-  flex: 1; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; outline: none;
+  flex: 1; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; outline: none; background: var(--bg); overscroll-behavior-y: contain;
   padding: 16px calc(var(--sar) + 16px) 22px calc(var(--sal) + 16px);
   animation: viewin .22s ease-out;
 }

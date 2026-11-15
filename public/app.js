@@ -89,12 +89,16 @@
     if (S.settings.theme === 'auto') r.removeAttribute('data-theme'); else r.setAttribute('data-theme', S.settings.theme);
   }
 
-  /* Alto real de la pantalla: en iOS (app instalada) a veces el viewport queda más corto que la pantalla
-     y se ve una franja vacía abajo. Lo fijamos a mano. */
+  /* En iPhone (app instalada) a veces el área visible termina antes del borde de la pantalla: ya no hay
+     "zona del botón de inicio" que respetar adentro de la app, así que se anula ese margen inferior. */
+  let sabOff = false;
   function fit() {
-    let h = window.innerHeight;
-    if (isStandalone() && matchMedia('(orientation: portrait)').matches) h = Math.max(h, Math.max(screen.width, screen.height));
-    document.documentElement.style.setProperty('--app-h', h + 'px');
+    const root = document.documentElement;
+    sabOff = false;
+    if (isStandalone() && matchMedia('(orientation: portrait)').matches) {
+      sabOff = Math.max(screen.width, screen.height) - root.clientHeight >= 20;
+    }
+    root.style.setProperty('--sab', sabOff ? '0px' : 'env(safe-area-inset-bottom, 0px)');
   }
   fit();
   window.addEventListener('resize', fit);
@@ -108,7 +112,7 @@
       sab = parseFloat(getComputedStyle(p).paddingBottom) || 0;
       p.remove();
     } catch (e) { /* noop */ }
-    return `${window.innerWidth}×${window.innerHeight} · pantalla ${screen.width}×${screen.height} · margen inferior ${sab}px · ${isStandalone() ? 'app instalada' : 'navegador'}`;
+    return `${window.innerWidth}×${document.documentElement.clientHeight} · pantalla ${screen.width}×${screen.height} · margen inferior ${sab}px${sabOff ? ' (anulado)' : ''} · ${isStandalone() ? 'app instalada' : 'navegador'}`;
   }
 
   /* sheets */
