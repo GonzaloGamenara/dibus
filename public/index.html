@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Dibus · ¿Quién dibuja mejor?</title>
+  <meta name="description" content="Personajes al azar para dibujar con amigos. Cronómetro, categorías y puntaje: gana el que mejor dibuja.">
+
+  <meta name="theme-color" content="#0f2747">
+  <meta name="color-scheme" content="light dark">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Dibus">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="top">
+      <div class="logo" aria-hidden="true">✏️</div>
+      <div>
+        <div class="brand">Dibus</div>
+        <div class="tag">¿Quién dibuja mejor?</div>
+      </div>
+    </header>
+    <main id="view" class="view" tabindex="-1"></main>
+    <nav class="tabbar" id="tabbar" aria-label="Secciones">
+      <button data-a="tab" data-t="play" class="on"><span>🎲</span><b>Jugar</b></button>
+      <button data-a="tab" data-t="cats"><span>🗂️</span><b>Categorías</b></button>
+      <button data-a="tab" data-t="hist"><span>🏆</span><b>Historial</b></button>
+      <button data-a="tab" data-t="set"><span>⚙️</span><b>Ajustes</b></button>
+    </nav>
+  </div>
+
+  <div id="game" class="game" hidden></div>
+  <div id="sheet" class="sheet" hidden></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <noscript><p style="padding:24px;font-family:sans-serif">Dibus necesita JavaScript para funcionar.</p></noscript>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

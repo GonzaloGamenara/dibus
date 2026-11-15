@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "Dibus · ¿Quién dibuja mejor?",
+  "short_name": "Dibus",
+  "description": "Personajes al azar para dibujar con amigos. ¡Gana el que mejor dibuja!",
+  "lang": "es-AR",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f2747",
+  "theme_color": "#0f2747",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
