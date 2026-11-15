@@ -1,6 +1,6 @@
 # Catálogo de Dibus (v2, más general)
 
-Total: **1011** personajes en **23** categorías.
+Total: **1010** personajes en **23** categorías.
 
 ## 📺 Cartoon Network (39)
 
@@ -535,7 +535,7 @@ Total: **1011** personajes en **23** categorías.
 - Kitt · El auto fantástico
 - Lassie
 
-## ⭐ Famosos y deportistas (39)
+## ⭐ Famosos y deportistas (38)
 
 - Lionel Messi
 - Diego Maradona
@@ -575,7 +575,6 @@ Total: **1011** personajes en **23** categorías.
 - Napoleón
 - Frida Kahlo
 - Papa Francisco
-- Mario Bros?
 
 ## 🧉 Argentina (40)
 

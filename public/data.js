@@ -584,8 +584,7 @@ Cleopatra
 Napoleón
 Frida Kahlo
 Papa Francisco
-Mario Bros?
-`.replace('Mario Bros? \n', ''));
+`);
 
   add('argentina', '🧉', 'Argentina', `
 Mafalda
