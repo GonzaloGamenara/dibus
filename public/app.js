@@ -56,7 +56,7 @@
   }
   function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) { /* noop */ } }
 
-  const UI = { tab: 'play', open: null };
+  const UI = { tab: 'play', open: null, q: '' };
 
   /* ---------------------------- catálogo ---------------------------- */
   const parseItems = txt => String(txt).split('\n').map(l => l.trim()).filter(Boolean).map(l => {
@@ -87,6 +87,28 @@
   function applyTheme() {
     const r = document.documentElement;
     if (S.settings.theme === 'auto') r.removeAttribute('data-theme'); else r.setAttribute('data-theme', S.settings.theme);
+  }
+
+  /* Alto real de la pantalla: en iOS (app instalada) a veces el viewport queda más corto que la pantalla
+     y se ve una franja vacía abajo. Lo fijamos a mano. */
+  function fit() {
+    let h = window.innerHeight;
+    if (isStandalone() && matchMedia('(orientation: portrait)').matches) h = Math.max(h, Math.max(screen.width, screen.height));
+    document.documentElement.style.setProperty('--app-h', h + 'px');
+  }
+  fit();
+  window.addEventListener('resize', fit);
+  window.addEventListener('orientationchange', () => setTimeout(fit, 250));
+  function diagInfo() {
+    let sab = '?';
+    try {
+      const p = document.createElement('div');
+      p.style.cssText = 'position:fixed;bottom:0;padding-bottom:env(safe-area-inset-bottom);visibility:hidden';
+      document.body.appendChild(p);
+      sab = parseFloat(getComputedStyle(p).paddingBottom) || 0;
+      p.remove();
+    } catch (e) { /* noop */ }
+    return `${window.innerWidth}×${window.innerHeight} · pantalla ${screen.width}×${screen.height} · margen inferior ${sab}px · ${isStandalone() ? 'app instalada' : 'navegador'}`;
   }
 
   /* sheets */
@@ -157,48 +179,67 @@
     <div class="row"><div class="lbl"><b>${label}</b>${sub ? `<small>${sub}</small>` : ''}</div>
       <button class="sw" role="switch" aria-checked="${!!S.settings[k]}" aria-label="${label}" data-a="toggle" data-k="${k}"></button></div>`;
 
+  const initial = n => esc(([...n.trim()][0] || '?').toUpperCase());
+  const PRESETS = [30, 60, 120, 180];
+
   function viewPlay() {
     const s = S.settings, n = poolSize(), nc = activeCats().length;
     const np = S.players.length;
     const hint = np === 0 ? 'Sin jugadores = modo libre: solo personajes y cronómetro.'
       : np === 1 ? 'Sumá al menos un jugador más para llevar el puntaje.'
-        : 'Se juega con puntaje: 1 punto por cada ronda ganada. ¡Que gane el mejor!';
+        : 'Se juega con puntaje: 1 punto por cada ronda ganada.';
     const install = (isIOS && !isStandalone() && !S.hideInstall) ? `
       <div class="install"><b>📲 Instalala en tu iPhone</b>
-      <p>Tocá <b style="display:inline">Compartir ⎋</b> en Safari y elegí <b style="display:inline">“Agregar a pantalla de inicio”</b>. Se abre a pantalla completa y anda sin internet.</p>
+      <p>Tocá <b>Compartir</b> en Safari y elegí <b>“Agregar a pantalla de inicio”</b>. Se abre a pantalla completa y anda sin internet.</p>
       <button data-a="hide-install" aria-label="Cerrar">✕</button></div>` : '';
     return `${install}
     <section class="card">
-      <div class="card-h"><h2>👥 Jugadores</h2><span class="muted">${np}/${MAX_PLAYERS}</span></div>
-      <div class="chips">${S.players.map((p, i) => `<span class="chip" style="--pc:${PC[i % PC.length]}"><i></i>${esc(p)}<button data-a="rm-player" data-i="${i}" aria-label="Quitar a ${esc(p)}">✕</button></span>`).join('')}</div>
+      <div class="card-h"><h2><span class="ico">👥</span>Jugadores</h2><span class="count">${np}/${MAX_PLAYERS}</span></div>
+      ${np ? `<div class="players">${S.players.map((p, i) => `<span class="pl" style="--pc:${PC[i % PC.length]}"><i>${initial(p)}</i><span>${esc(p)}</span><button data-a="rm-player" data-i="${i}" aria-label="Quitar a ${esc(p)}">✕</button></span>`).join('')}</div>`
+        : `<div class="noone">Todavía no hay nadie 👇<br>Sumá a los que van a dibujar</div>`}
       <form class="add" data-form="player" autocomplete="off">
         <input type="text" name="n" maxlength="16" placeholder="Nombre del jugador" enterkeyhint="done" autocapitalize="words" autocomplete="off" autocorrect="off">
-        <button class="btn sm" type="submit">Sumar</button>
+        <button class="btn sm yellow" type="submit">＋ Sumar</button>
       </form>
       <p class="hint">${hint}</p>
     </section>
     <section class="card">
-      <div class="card-h"><h2>⏱️ La partida</h2></div>
+      <div class="card-h"><h2><span class="ico">⏱️</span>La partida</h2></div>
       ${stepper('rounds', 'Personajes', 'cuántas rondas', s.rounds === 0 ? '∞' : s.rounds)}
       ${stepper('drawSec', 'Tiempo para dibujar', 'por personaje', fmtDur(s.drawSec))}
+      <div class="presets">${PRESETS.map(v => `<button class="pre ${s.drawSec === v ? 'on' : ''}" data-a="preset" data-k="drawSec" data-v="${v}">${fmtDur(v).replace(' seg', ' s')}</button>`).join('')}</div>
       ${stepper('pauseSec', 'Pausa entre personajes', 'cuenta regresiva', s.pauseSec === 0 ? 'Sin pausa' : fmtDur(s.pauseSec))}
       <div class="row col"><div class="lbl"><b>Elegir ganador</b><small>${s.judging === 'each' ? 'Al terminar cada dibujo, votan' : 'Dibujan todos seguidos y votan al final'}</small></div>
         ${seg('judging', [['each', 'Cada ronda'], ['end', 'Al final']], s.judging)}</div>
       <div class="row col"><div class="lbl"><b>Retos extra</b><small>Condiciones locas para dibujar</small></div>
         ${seg('twist', [['off', 'No'], ['sometimes', 'A veces'], ['always', 'Siempre']], s.twist)}</div>
     </section>
-    <p class="pool">🎲 <b>${fmtN(n)}</b> personajes en <b>${nc}</b> categorías · <button data-a="tab" data-t="cats">cambiar</button></p>
-    <div class="cta-wrap"><button class="btn big" data-a="start" ${n ? '' : 'disabled'}>¡A dibujar! ✏️</button></div>`;
+    <button class="catcard" data-a="tab" data-t="cats">
+      <span class="ico">🎲</span>
+      <span><b>${fmtN(n)} personajes</b><small>${nc} categoría${nc === 1 ? '' : 's'} activa${nc === 1 ? '' : 's'} · tocá para elegir</small></span>
+      <span class="chev">›</span>
+    </button>`;
   }
 
-  function viewCats() {
+  function ctaHTML() {
+    const s = S.settings, np = S.players.length, n = poolSize();
+    const sum = [s.rounds === 0 ? '∞ rondas' : `${s.rounds} ronda${s.rounds === 1 ? '' : 's'}`, fmtDur(s.drawSec), np >= 2 ? `${np} jugadores` : 'modo libre'].join(' · ');
+    return `<div class="cta-sum">${sum}</div><button class="btn big" data-a="start" ${n ? '' : 'disabled'}>¡A dibujar! ✏️</button>`;
+  }
+
+  function catListHTML() {
+    const q = (UI.q || '').trim().toLowerCase();
     const cats = allCats();
-    const n = poolSize(), nc = activeCats().length;
-    const list = cats.map(c => {
+    let out = '', shown = 0;
+    cats.forEach(c => {
+      const nameHit = !q || c.name.toLowerCase().includes(q);
+      const items = c.items.map((it, i) => ({ it, i })).filter(x => !q || nameHit || x.it.n.toLowerCase().includes(q) || x.it.o.toLowerCase().includes(q));
+      if (q && !nameHit && !items.length) return;
+      shown++;
       const on = !S.off[c.id];
       const ex = c.items.filter(it => S.excluded[ikey(c.id, it)]).length;
-      const open = UI.open === c.id;
-      return `<div class="cat ${on ? '' : 'off'}">
+      const open = UI.open === c.id || (q && !nameHit && items.length > 0);
+      out += `<div class="cat ${on ? '' : 'off'}">
         <div class="cat-top">
           <button class="cat-open" data-a="expand" data-id="${esc(c.id)}" aria-expanded="${open}">
             <span class="cat-emoji">${esc(c.emoji)}</span>
@@ -208,16 +249,24 @@
         </div>
         ${open ? `<div class="cat-body">
           <p class="hint">Tocá un personaje para sacarlo (o volver a ponerlo) del sorteo.</p>
-          <div class="items">${c.items.map((it, i) => `<button class="item ${S.excluded[ikey(c.id, it)] ? 'x' : ''}" data-a="toggle-item" data-c="${esc(c.id)}" data-i="${i}">${esc(it.n)}${it.o ? ` <small>· ${esc(it.o)}</small>` : ''}</button>`).join('')}</div>
-          ${c.custom ? `<div class="cat-actions"><button class="btn sm blue" data-a="edit-cat" data-id="${esc(c.id)}">✎ Editar</button><button class="btn sm ghost" data-a="del-cat" data-id="${esc(c.id)}">🗑 Borrar</button></div>` : (ex ? `<div class="cat-actions"><button class="btn sm ghost" data-a="reset-items" data-id="${esc(c.id)}">Volver a poner los sacados</button></div>` : '')}
+          <div class="items">${items.map(({ it, i }) => `<button class="item ${S.excluded[ikey(c.id, it)] ? 'x' : ''}" data-a="toggle-item" data-c="${esc(c.id)}" data-i="${i}">${esc(it.n)}${it.o ? ` <small>· ${esc(it.o)}</small>` : ''}</button>`).join('')}</div>
+          ${c.custom ? `<div class="cat-actions"><button class="btn sm" data-a="edit-cat" data-id="${esc(c.id)}">✎ Editar</button><button class="btn sm ghost" data-a="del-cat" data-id="${esc(c.id)}">🗑 Borrar</button></div>` : (ex ? `<div class="cat-actions"><button class="btn sm ghost" data-a="reset-items" data-id="${esc(c.id)}">Volver a poner los sacados</button></div>` : '')}
         </div>` : ''}
       </div>`;
-    }).join('');
-    return `<div class="cats-head"><div><b>${fmtN(n)}</b> <span class="muted" style="font-weight:800">personajes en ${nc} de ${cats.length} categorías</span></div></div>
-      <div class="cats-head" style="gap:6px"><div><button class="link" data-a="cats-all">Todas</button><button class="link" data-a="cats-none">Ninguna</button></div>
-      <button class="btn sm" style="box-shadow:0 4px 0 var(--sol-d);background:var(--sol);color:#2b1d00" data-a="new-cat">＋ Mi categoría</button></div>
-      <div>${list}</div>
-      <p class="hint" style="text-align:center;margin-bottom:16px">Podés crear tus propias categorías con los personajes que quieras (ej: tu familia, tus amigos, inside jokes).</p>`;
+    });
+    return shown ? out : `<div class="nores">No encontré nada con “${esc(UI.q)}” 🤔</div>`;
+  }
+
+  function viewCats() {
+    const n = poolSize(), nc = activeCats().length, tot = allCats().length;
+    return `<div class="catbar">
+        <div class="total"><b>${fmtN(n)} personajes</b><span>${nc} de ${tot} categorías</span></div>
+        <input type="search" id="q" placeholder="Buscar personaje o categoría…" value="${esc(UI.q || '')}" autocomplete="off" autocorrect="off" autocapitalize="off" enterkeyhint="search">
+        <div class="tools"><button class="link" data-a="cats-all">Todas</button><button class="link" data-a="cats-none">Ninguna</button>
+          <button class="btn sm yellow" data-a="new-cat">＋ Mi categoría</button></div>
+      </div>
+      <div id="catlist">${catListHTML()}</div>
+      <p class="hint" style="text-align:center">Podés crear tus propias categorías con los personajes que quieras (tu familia, tus amigos, chistes internos).</p>`;
   }
 
   function viewHist() {
@@ -235,10 +284,10 @@
     });
     const rank = Object.values(tot).sort((a, b) => b.wins - a.wins || b.pts - a.pts);
     const medals = ['🥇', '🥈', '🥉'];
-    return `<section class="card"><div class="card-h"><h2>🏆 Ranking de victorias</h2></div>
+    return `<section class="card"><div class="card-h"><h2><span class="ico">🏆</span>Ranking de victorias</h2></div>
       ${rank.map((r, i) => `<div class="rank-row"><div class="medal">${medals[i] || (i + 1)}</div><div class="nm">${esc(r.name)}<small>${r.games} partida${r.games > 1 ? 's' : ''} · ${r.pts} punto${r.pts === 1 ? '' : 's'} en total</small></div><div class="pts">${r.wins}</div></div>`).join('')}
     </section>
-    <section class="card"><div class="card-h"><h2>🕘 Últimas partidas</h2></div>
+    <section class="card"><div class="card-h"><h2><span class="ico">🕘</span>Últimas partidas</h2></div>
       ${H.slice(0, 25).map(g => {
         const top = Math.max(...g.scores);
         const ws = top > 0 ? g.players.filter((_, i) => g.scores[i] === top) : [];
@@ -250,26 +299,27 @@
 
   function viewSet() {
     const s = S.settings;
-    return `<section class="card"><div class="card-h"><h2>🔔 Durante el juego</h2></div>
+    return `<section class="card"><div class="card-h"><h2><span class="ico">🔔</span>Durante el juego</h2></div>
       ${sw('sound', 'Sonidos', 'Beeps al final de cada tiempo')}
       ${sw('vibrate', 'Vibración', 'Solo en teléfonos que la permiten')}
       ${sw('wake', 'Mantener pantalla prendida', 'Para que no se apague mientras dibujan')}
       ${sw('allowReroll', 'Botón “Otro”', 'Cambiar el personaje de la ronda')}
       ${sw('showOrigin', 'Mostrar de dónde es', 'Ej: “Felipe · Mafalda”')}
     </section>
-    <section class="card"><div class="card-h"><h2>🎲 Sorteo</h2></div>
+    <section class="card"><div class="card-h"><h2><span class="ico">🎲</span>Sorteo</h2></div>
       ${sw('noRepeat', 'No repetir personajes', 'Hasta agotar el catálogo, entre partidas también')}
       <div class="row"><div class="lbl"><b>Personajes ya vistos</b><small>${fmtN(Object.keys(S.seen).length)} en memoria</small></div><button class="btn sm ghost" data-a="reset-seen">Reiniciar</button></div>
     </section>
-    <section class="card"><div class="card-h"><h2>🎨 Apariencia</h2></div>
+    <section class="card"><div class="card-h"><h2><span class="ico">🎨</span>Apariencia</h2></div>
       <div class="row col"><div class="lbl"><b>Tema</b></div>${seg('theme', [['auto', 'Automático'], ['light', 'Claro'], ['dark', 'Oscuro']], s.theme)}</div>
     </section>
-    <section class="card"><div class="card-h"><h2>ℹ️ Tips</h2></div>
+    <section class="card"><div class="card-h"><h2><span class="ico">ℹ️</span>Tips</h2></div>
       <p class="hint" style="margin-top:0">• Si no suena en el iPhone, fijate que no esté el <b>modo silencio</b> (switch lateral) y que el volumen esté arriba.<br>• Para instalarla: Safari → <b>Compartir</b> → <b>Agregar a pantalla de inicio</b>.<br>• Cada jugador dibuja en su hoja (o en su propio cuaderno). Cuando termina el tiempo, se muestran los dibus y se vota.</p>
     </section>
-    <section class="card"><div class="card-h"><h2>🧹 Datos</h2></div>
+    <section class="card"><div class="card-h"><h2><span class="ico">🧹</span>Datos</h2></div>
       <button class="btn sm ghost" data-a="reset-all">Restablecer todo</button>
-      <p class="hint">Se guarda todo en este dispositivo. Dibus v1.0 · hecho con ❤️ para dibujar con amigos.</p>
+      <p class="hint">Se guarda todo en este dispositivo. Dibus v1.1 · hecho con ❤️ para dibujar con amigos.</p>
+      <p class="hint" style="font-size:11.5px;opacity:.7;margin-top:0">${diagInfo()}</p>
     </section>`;
   }
 
@@ -281,6 +331,9 @@
     v.innerHTML = VIEWS[UI.tab]();
     v.scrollTop = top;
     $$('#tabbar button').forEach(b => b.classList.toggle('on', b.dataset.t === UI.tab));
+    const cta = $('#cta');
+    cta.hidden = UI.tab !== 'play';
+    if (!cta.hidden) cta.innerHTML = ctaHTML();
   }
 
   /* ======================================================================
@@ -418,8 +471,9 @@
       ring.style.strokeDashoffset = String(C * (1 - rem / G.dur));
       gameEl.classList.toggle('urgent', sec <= (G.dur >= 30000 ? 10 : 5));
     } else {
-      const t = $('#g-count');
+      const t = $('#g-count'), ring = $('#g-ring');
       if (t && t.textContent !== String(sec)) t.textContent = sec;
+      if (ring) ring.style.strokeDashoffset = String(C * (1 - rem / G.dur));
     }
     if (sec <= 3 && sec > 0 && G.lastBeep !== sec) { G.lastBeep = sec; sfx.tick(); vib(25); }
   }
@@ -443,11 +497,13 @@
   const GV = {
     pause() {
       const first = G.first;
+      const tips = ['Tomá un poco de agua 💧', 'Estirá la mano ✋', 'Cambiá de hoja 📄', 'Afilá el lápiz ✏️', 'Respirá hondo 😮‍💨', 'Mostrá tu mejor trazo 😎'];
       return `${head(roundLabel())}${prog()}${scoresStrip()}
       <div class="g-main">
-        <div class="g-sub" style="font-size:20px">${first ? '¡Preparate! Agarrá lápiz y papel ✏️' : 'Siguiente personaje en…'}</div>
-        <div class="g-big" id="g-count">${Math.ceil(G.dur / 1000)}</div>
-        <div class="g-sub">${first ? 'El personaje aparece cuando llega a cero. ¡No espíes!' : 'Respirá, tomá un poco de agua 💧'}</div>
+        <div class="g-kicker">${first ? '¡Preparate! Agarrá lápiz y papel ✏️' : 'Siguiente personaje en…'}</div>
+        <div class="g-timer big"><svg viewBox="0 0 120 120"><circle class="bg" cx="60" cy="60" r="54"/><circle class="fg" id="g-ring" cx="60" cy="60" r="54" style="stroke-dashoffset:0"/></svg>
+          <div class="g-time" id="g-count">${Math.ceil(G.dur / 1000)}</div></div>
+        <div class="g-sub">${first ? 'El personaje aparece al llegar a cero. ¡No espíes!' : tips[rand(tips.length)]}</div>
       </div>
       <div class="g-actions" style="grid-template-columns:1fr 1fr">
         <button class="btn gbtn" data-a="g-pausebtn"><span>${G.paused ? '▶️' : '⏸️'}</span>${G.paused ? 'Seguir' : 'Pausa'}</button>
@@ -461,11 +517,13 @@
       btns.push(`<button class="btn gbtn" data-a="g-add"><span>➕</span>30 seg</button>`);
       return `${head(roundLabel())}${prog()}${scoresStrip()}
       <div class="g-main">
-        <div class="g-emoji">${esc(ch.emoji)}</div>
-        <div class="g-cat">${esc(ch.cat)}</div>
-        <h1 class="g-name ${nameCls(ch.n)}">${esc(ch.n)}</h1>
-        ${ch.o && G.st.showOrigin ? `<div class="g-origin">${esc(ch.o)}</div>` : ''}
-        ${r.twist ? `<div class="g-twist">🎯 ${esc(r.twist)}</div>` : ''}
+        <div class="g-card">
+          <div class="g-emoji">${esc(ch.emoji)}</div>
+          <div class="g-cat">${esc(ch.cat)}</div>
+          <h1 class="g-name ${nameCls(ch.n)}">${esc(ch.n)}</h1>
+          ${ch.o && G.st.showOrigin ? `<div class="g-origin">${esc(ch.o)}</div>` : ''}
+          ${r.twist ? `<div class="g-twist">🎯 ${esc(r.twist)}</div>` : ''}
+        </div>
       </div>
       <div class="g-timer"><svg viewBox="0 0 120 120"><circle class="bg" cx="60" cy="60" r="54"/><circle class="fg" id="g-ring" cx="60" cy="60" r="54" style="stroke-dashoffset:0"/></svg>
         <div class="g-time" id="g-time"></div>${G.paused ? '<div class="g-paused">EN PAUSA</div>' : ''}</div>
@@ -488,10 +546,12 @@
     judge() {
       const r = curRound(), ch = r.ch;
       return `${head(roundLabel())}${prog()}${scoresStrip()}
-      <div class="g-main">
-        <div class="g-cat">${esc(ch.emoji)} ${esc(ch.cat)}</div>
-        <div class="g-name ${nameCls(ch.n)}" style="font-size:clamp(26px,8vw,40px)">${esc(ch.n)}</div>
-        <div class="g-title" style="font-size:clamp(22px,6.5vw,30px);margin-top:8px">¿Quién lo dibujó mejor?</div>
+      <div class="g-main" style="justify-content:flex-start;padding-top:18px">
+        <div class="g-card" style="padding:14px 14px 16px">
+          <div class="g-cat">${esc(ch.emoji)} ${esc(ch.cat)}</div>
+          <div class="g-name ${nameCls(ch.n)}" style="font-size:clamp(26px,8vw,40px)">${esc(ch.n)}</div>
+        </div>
+        <div class="g-title" style="font-size:clamp(22px,6.5vw,30px);margin-top:14px">¿Quién lo dibujó mejor?</div>
         <div class="pgrid">${G.players.map((p, i) => `<button class="pbtn ${r.winner === i ? 'sel' : ''}" style="--pc:${PC[i % PC.length]}" data-a="g-win" data-w="${i}"><i></i>${esc(p)}</button>`).join('')}
           <button class="pbtn tie ${r.winner === -1 ? 'sel' : ''}" data-a="g-win" data-w="-1">🤝 Empate / Nadie</button></div>
       </div>`;
@@ -586,6 +646,7 @@
       S.settings[k] = arr[Math.max(0, Math.min(arr.length - 1, i + d))];
       save(); render();
     },
+    preset(el) { S.settings[el.dataset.k] = +el.dataset.v; save(); render(); },
     seg(el) { S.settings[el.dataset.k] = el.dataset.v; save(); if (el.dataset.k === 'theme') applyTheme(); render(); },
     toggle(el) { S.settings[el.dataset.k] = !S.settings[el.dataset.k]; save(); render(); },
 
@@ -694,6 +755,11 @@
     if (!el) return;
     const fn = A[el.dataset.a];
     if (fn) { fn(el, e); }
+  });
+  document.addEventListener('input', e => {
+    if (e.target.id !== 'q') return;
+    UI.q = e.target.value;
+    const l = $('#catlist'); if (l) l.innerHTML = catListHTML();
   });
   document.addEventListener('submit', e => {
     const f = e.target.closest('[data-form]');
