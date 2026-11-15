@@ -12,6 +12,8 @@
       })
     });
 
+  /* ============================ DIBUJOS ============================ */
+
   add('cn', '📺', 'Cartoon Network', `
 Billy|Billy y Mandy
 Mandy|Billy y Mandy
@@ -21,19 +23,36 @@ Ed|Ed, Edd y Eddy
 Edd|Ed, Edd y Eddy
 Eddy|Ed, Edd y Eddy
 Tablón|Ed, Edd y Eddy
+Kevin|Ed, Edd y Eddy
+Rolf|Ed, Edd y Eddy
 Dexter|El Laboratorio de Dexter
 Dee Dee|El Laboratorio de Dexter
+Mandark|El Laboratorio de Dexter
 Johnny Bravo
 Bombón|Las Chicas Superpoderosas
 Burbuja|Las Chicas Superpoderosas
 Bellota|Las Chicas Superpoderosas
 Mojo Jojo|Las Chicas Superpoderosas
+Profesor Utonio|Las Chicas Superpoderosas
 Coraje|Coraje, el perro cobarde
+Muriel|Coraje, el perro cobarde
 Vaca|Vaca y Pollito
 Pollito|Vaca y Pollito
+Yo soy Weasel
 Ben 10
 Cuatro Brazos|Ben 10
 Samurai Jack
+Aku|Samurai Jack
+Número 1|Los Chicos del Barrio
+Lazlo|Campamento Lazlo
+Raj|Campamento Lazlo
+Bloo|La casa de Foster para amigos imaginarios
+Mac|La casa de Foster para amigos imaginarios
+Generador Rex
+Johnny Test
+Chowder
+Flapjack
+Jackie Chan|Las aventuras de Jackie Chan
 Finn|Hora de Aventura
 Jake|Hora de Aventura
 Princesa Chicle|Hora de Aventura
@@ -50,8 +69,7 @@ Starfire|Los Jóvenes Titanes
 Raven|Los Jóvenes Titanes
 Chico Bestia|Los Jóvenes Titanes
 Cyborg|Los Jóvenes Titanes
-Chowder
-Bloo|La casa de Blooregard
+Tío Abuelo|Tío Grandpa
 `);
 
   add('nick', '🧽', 'Nickelodeon', `
@@ -65,26 +83,48 @@ Gary|Bob Esponja
 Timmy Turner|Los Padrinos Mágicos
 Cosmo|Los Padrinos Mágicos
 Wanda|Los Padrinos Mágicos
+Poof|Los Padrinos Mágicos
+Vicky|Los Padrinos Mágicos
 Jimmy Neutrón
+Carl|Jimmy Neutrón
+Sheen|Jimmy Neutrón
 Tommy Pickles|Rugrats
 Chuckie|Rugrats
+Angélica|Rugrats
+Arnold|Hey Arnold!
+Helga|Hey Arnold!
 Aang|Avatar
 Katara|Avatar
 Sokka|Avatar
+Toph|Avatar
 Zuko|Avatar
 Appa|Avatar
-Dora la Exploradora
-Botas|Dora la Exploradora
+Momo|Avatar
 Rocko|La vida moderna de Rocko
 Ren y Stimpy
-Arnold|Hey Arnold!
 Invasor Zim
+GIR|Invasor Zim
 Danny Phantom
 CatDog
+Otto Rocket|Rocket Power
+Eliza Thornberry|Los Thornberrys
+Angus y Norbert|Los Castores Cascarrabias
+Oblina|Aaahh!!! Monstruos Reales
+Bloom|Winx Club
+Stella|Winx Club
+Pucca
 Leonardo|Tortugas Ninja
 Donatello|Tortugas Ninja
 Rafael|Tortugas Ninja
 Miguel Ángel|Tortugas Ninja
+Splinter|Tortugas Ninja
+Dora la Exploradora
+Botas|Dora la Exploradora
+Diego|Go, Diego, Go!
+Pablo|Los Backyardigans
+Tyrone|Los Backyardigans
+Uniqua|Los Backyardigans
+Blue|Las pistas de Blue
 `);
 
   add('disney', '🏰', 'Disney y Pixar', `
@@ -98,63 +138,154 @@ Tío Rico McPato|Disney
 Chip y Dale|Disney
 Simba|El Rey León
 Nala|El Rey León
+Mufasa|El Rey León
 Scar|El Rey León
 Timón|El Rey León
 Pumba|El Rey León
+Rafiki|El Rey León
 Aladdín|Disney
 Jazmín|Aladdín
 El Genio|Aladdín
+Jafar|Aladdín
+Abu|Aladdín
 Elsa|Frozen
 Anna|Frozen
 Olaf|Frozen
+Kristoff|Frozen
+Sven|Frozen
 Moana|Disney
 Maui|Moana
 Mulán|Disney
+Mushu|Mulán
 Rapunzel|Enredados
+Flynn Rider|Enredados
+Pascal|Enredados
 Bella|La Bella y la Bestia
 La Bestia|La Bella y la Bestia
+Lumière|La Bella y la Bestia
 Ariel|La Sirenita
+Sebastián|La Sirenita
+Úrsula|La Sirenita
 Cenicienta|Disney
 Blancanieves|Disney
+La Bella Durmiente|Disney
+Tiana|La Princesa y el Sapo
+Pocahontas|Disney
+Mérida|Valiente
 Pinocho|Disney
+Pepe Grillo|Pinocho
 Peter Pan|Disney
 Campanita|Peter Pan
 Capitán Garfio|Peter Pan
 Bambi|Disney
+Tambor|Bambi
 Dumbo|Disney
 Baloo|El libro de la selva
 Mowgli|El libro de la selva
 Winnie Pooh|Disney
 Tigger|Winnie Pooh
+Igor|Winnie Pooh
+Piglet|Winnie Pooh
 Stitch|Lilo y Stitch
+Lilo|Lilo y Stitch
+Hércules|Disney
+Tarzán|Disney
+Quasimodo|El Jorobado de Notre Dame
 Maléfica|Disney
 Cruella de Vil|101 Dálmatas
+Pongo|101 Dálmatas
+Ralph|Ralph el Demoledor
+Vanellope|Ralph el Demoledor
+Judy Hopps|Zootrópolis
+Nick Wilde|Zootrópolis
+Mirabel|Encanto
+Bruno|Encanto
 Woody|Toy Story
 Buzz Lightyear|Toy Story
 Jessie|Toy Story
 Rex|Toy Story
 Sr. Cara de Papa|Toy Story
+Hamm|Toy Story
+Lotso|Toy Story
 Sulley|Monsters Inc.
 Mike Wazowski|Monsters Inc.
+Boo|Monsters Inc.
 Nemo|Buscando a Nemo
 Dory|Buscando a Nemo
 Marlin|Buscando a Nemo
+Bruce|Buscando a Nemo
 WALL·E|Pixar
+EVA|WALL·E
 Remy|Ratatouille
 Carl|Up
 Dug|Up
+Russell|Up
 Joy|Intensa-Mente
 Tristeza|Intensa-Mente
+Ira|Intensa-Mente
 Miguel|Coco
+Dante|Coco
 Rayo McQueen|Cars
 Mate|Cars
 Sr. Increíble|Los Increíbles
 Elastigirl|Los Increíbles
+Edna Moda|Los Increíbles
 Baymax|Big Hero 6
+Bolt
+Pollito Little|Chicken Little
+`);
+
+  add('dreamworks', '🟢', 'DreamWorks, Illumination y más', `
+Shrek
+Burro|Shrek
+Fiona|Shrek
+Gato con Botas|Shrek
+Lord Farquaad|Shrek
+Hada Madrina|Shrek
+Po|Kung Fu Panda
+Tigresa|Kung Fu Panda
+Maestro Shifu|Kung Fu Panda
+Alex el león|Madagascar
+Marty la cebra|Madagascar
+Melman la jirafa|Madagascar
+Gloria la hipopótama|Madagascar
+Skipper|Los Pingüinos de Madagascar
+Rey Julien|Madagascar
+Chimuelo|Cómo entrenar a tu dragón
+Hipo|Cómo entrenar a tu dragón
+Megamente
+Oscar|El gran pez
+Barry B. Benson|Bee Movie
+Z|Hormiga Z
+Gru|Mi Villano Favorito
+Minion Kevin|Mi Villano Favorito
+Minion Stuart|Mi Villano Favorito
+Minion Bob|Mi Villano Favorito
+Agnes|Mi Villano Favorito
+Scrat|La Era de Hielo
+Manny|La Era de Hielo
+Sid|La Era de Hielo
+Diego|La Era de Hielo
+Mumble|Happy Feet
+Alvin|Alvin y las Ardillas
+Simon|Alvin y las Ardillas
+Theodore|Alvin y las Ardillas
+Flint Lockwood|Lluvia de hamburguesas
+Drácula|Hotel Transylvania
+Red|Angry Birds: La película
+Buster Moon|Sing
+Poppy|Trolls
+Branch|Trolls
+Papá Pitufo|Los Pitufos
+Pitufina|Los Pitufos
+Garfield
+Spirit|El corcel indomable
+Rango
 `);
 
   add('clasicos', '🎞️', 'Dibujos clásicos', `
 Bugs Bunny|Looney Tunes
+Lola Bunny|Looney Tunes
 Pato Lucas|Looney Tunes
 Porky|Looney Tunes
 Piolín|Looney Tunes
@@ -163,27 +294,45 @@ Speedy Gonzales|Looney Tunes
 Correcaminos|Looney Tunes
 Coyote|Looney Tunes
 Demonio de Tasmania|Looney Tunes
+Marvin el Marciano|Looney Tunes
+Elmer Gruñón|Looney Tunes
 Tom|Tom y Jerry
 Jerry|Tom y Jerry
 Pantera Rosa
 Pedro Picapiedra|Los Picapiedra
 Pablo Mármol|Los Picapiedra
+Dino|Los Picapiedra
 Scooby-Doo
 Shaggy|Scooby-Doo
 Oso Yogui
 Popeye
 Betty Boop
 Felix el Gato
-Garfield
 Snoopy
 Charlie Brown
-Papá Pitufo|Los Pitufos
 Inspector Gadget
 Heidi
 He-Man
+Skeletor|He-Man
 Los Supersónicos
 Capitán Planeta
 Patán|Los Autos Locos
+Pinky y Cerebro
+Yakko|Animaniacs
+Wakko|Animaniacs
+Dot|Animaniacs
+Buster Bunny|Tiny Toons
+Babs Bunny|Tiny Toons
+Pato Darkwing|Darkwing Duck
+Gadget|Los Rescatadores
+Monterey Jack|Los Rescatadores
+Doug Funnie|Doug
+T.J.|Recreo
+Spinelli|Recreo
+Don Gato
+Meteoro|Speed Racer
+Johnny Quest
+Ositos Cariñositos
 `);
 
   add('series', '🍩', 'Los Simpson y series animadas', `
@@ -195,175 +344,549 @@ Maggie Simpson|Los Simpson
 Krusty el Payaso|Los Simpson
 Ned Flanders|Los Simpson
 Sr. Burns|Los Simpson
+Moe|Los Simpson
+Abuelo Simpson|Los Simpson
 Peter Griffin|Padre de Familia
+Lois|Padre de Familia
 Stewie|Padre de Familia
 Brian|Padre de Familia
 Cartman|South Park
 Kenny|South Park
+Kyle|South Park
+Stan|South Park
 Rick|Rick y Morty
 Morty|Rick y Morty
 Fry|Futurama
 Leela|Futurama
 Bender|Futurama
-Bluey
-Peppa Pig
-Pocoyó
-Chase|Paw Patrol
-Gru|Mi Villano Favorito
-Minion|Mi Villano Favorito
-Shrek
-Burro|Shrek
-Gato con Botas|Shrek
+Zoidberg|Futurama
+Stan Smith|American Dad
+Roger|American Dad
+Bob Belcher|Bob's Burgers
+Beavis y Butt-Head
+Daria
 `);
 
   add('anime', '🍥', 'Anime y manga', `
 Goku|Dragon Ball
 Vegeta|Dragon Ball
 Gohan|Dragon Ball
+Goten|Dragon Ball
+Trunks|Dragon Ball
 Piccolo|Dragon Ball
 Krilin|Dragon Ball
+Yamcha|Dragon Ball
 Freezer|Dragon Ball
+Cell|Dragon Ball
 Majin Buu|Dragon Ball
 Bulma|Dragon Ball
+Maestro Roshi|Dragon Ball
+Mr. Satán|Dragon Ball
+Shenlong|Dragon Ball
 Naruto|Naruto
 Sasuke|Naruto
+Sakura|Naruto
 Kakashi|Naruto
+Itachi|Naruto
+Gaara|Naruto
+Jiraiya|Naruto
+Rock Lee|Naruto
 Luffy|One Piece
 Zoro|One Piece
+Nami|One Piece
+Usopp|One Piece
 Sanji|One Piece
 Chopper|One Piece
-Sailor Moon
-Doraemon
-Shin-chan
-Totoro|Studio Ghibli
-Chihiro|El viaje de Chihiro
-Sin Cara|El viaje de Chihiro
-Seiya|Caballeros del Zodíaco
+Nico Robin|One Piece
+Ace|One Piece
+Ichigo|Bleach
+Edward Elric|Fullmetal Alchemist
+Alphonse Elric|Fullmetal Alchemist
 Light Yagami|Death Note
+L|Death Note
 Ryuk|Death Note
 Eren Jaeger|Ataque a los Titanes
 Mikasa|Ataque a los Titanes
+Levi|Ataque a los Titanes
 Tanjiro|Demon Slayer
 Nezuko|Demon Slayer
+Zenitsu|Demon Slayer
+Inosuke|Demon Slayer
 Deku|My Hero Academia
 All Might|My Hero Academia
+Bakugo|My Hero Academia
 Saitama|One Punch Man
 Gojo|Jujutsu Kaisen
-Yugi|Yu-Gi-Oh!
-Mago Oscuro|Yu-Gi-Oh!
-Agumon|Digimon
-Inuyasha
-Astro Boy
+Yuji Itadori|Jujutsu Kaisen
+Denji|Chainsaw Man
+Pochita|Chainsaw Man
 Anya|Spy x Family
-Shinji|Evangelion
 Gon|Hunter x Hunter
+Killua|Hunter x Hunter
+Sailor Moon
+Sailor Mars|Sailor Moon
+Sakura Card Captors
+Doraemon
+Nobita|Doraemon
+Shin-chan
+Hamtaro
+Totoro|Studio Ghibli
+Chihiro|El viaje de Chihiro
+Haku|El viaje de Chihiro
+Sin Cara|El viaje de Chihiro
+Ponyo|Studio Ghibli
+Kiki|Studio Ghibli
+Howl|El castillo ambulante
+Seiya|Caballeros del Zodíaco
+Shiryu|Caballeros del Zodíaco
+Hyoga|Caballeros del Zodíaco
+Shun|Caballeros del Zodíaco
+Ikki|Caballeros del Zodíaco
+Agumon|Digimon
+Gabumon|Digimon
+Patamon|Digimon
+Yugi|Yu-Gi-Oh!
+Kaiba|Yu-Gi-Oh!
+Mago Oscuro|Yu-Gi-Oh!
+Dragón Blanco de Ojos Azules|Yu-Gi-Oh!
+Tyson|Beyblade
+Inuyasha
+Kenshin|Samurai X
+Yusuke|Yu Yu Hakusho
+Ranma
+Shinji|Evangelion
+Rei Ayanami|Evangelion
+Asuka|Evangelion
+Lupin III
+Astro Boy
+Mazinger Z
+Candy Candy
 `);
 
   add('pokemon', '⚡', 'Pokémon', `
 Pikachu
+Pichu
 Raichu
+Bulbasaur
+Ivysaur
+Venusaur
 Charmander
 Charmeleon
 Charizard
-Bulbasaur
-Venusaur
 Squirtle
+Wartortle
 Blastoise
-Jigglypuff
-Psyduck
-Gengar
-Snorlax
-Eevee
-Magikarp
-Gyarados
-Mewtwo
-Mew
-Meowth
-Togepi
-Lucario
-Greninja
-Gardevoir
-Onix
-Geodude
-Machop
+Caterpie
+Butterfree
+Weedle
+Pidgeot
+Rattata
+Ekans
+Sandshrew
+Nidoking
+Clefairy
 Vulpix
 Ninetales
+Jigglypuff
+Zubat
+Oddish
+Diglett
+Meowth
+Persian
+Psyduck
+Mankey
 Growlithe
 Arcanine
-Lapras
-Dragonite
-Mimikyu
-Rayquaza
-Umbreon
-Ditto
-Oddish
-Zubat
+Poliwhirl
+Abra
+Alakazam
+Machop
+Machamp
+Geodude
+Ponyta
 Slowpoke
+Magnemite
+Gastly
+Haunter
+Gengar
+Onix
+Hypno
+Voltorb
 Cubone
+Hitmonchan
+Koffing
+Chansey
+Horsea
+Staryu
+Mr. Mime
+Scyther
+Jynx
+Magmar
+Pinsir
+Tauros
+Magikarp
+Gyarados
+Lapras
+Ditto
+Eevee
+Vaporeon
+Jolteon
+Flareon
+Porygon
+Aerodactyl
+Snorlax
+Articuno
+Zapdos
+Moltres
+Dratini
+Dragonite
+Mewtwo
+Mew
+Chikorita
+Cyndaquil
+Totodile
+Togepi
+Espeon
+Umbreon
+Tyranitar
+Lugia
+Ho-Oh
+Treecko
 Torchic
+Mudkip
+Blaziken
+Gardevoir
+Kyogre
+Groudon
+Rayquaza
+Turtwig
+Chimchar
 Piplup
+Lucario
+Garchomp
+Dialga
+Greninja
+Sylveon
+Mimikyu
 Ash Ketchum|Pokémon
 Misty|Pokémon
 Brock|Pokémon
-Equipo Rocket|Jessie y James
+Jessie y James|Equipo Rocket
+Profesor Oak|Pokémon
 Pokébola
 `);
 
-  add('videojuegos', '🎮', 'Videojuegos', `
+  add('infancia', '🧸', 'Primera infancia', `
+Dora la Exploradora
+Diego|Go, Diego, Go!
+Barney|El dinosaurio
+Tinky Winky|Teletubbies
+Dipsy|Teletubbies
+Laa-Laa|Teletubbies
+Po|Teletubbies
+Elmo|Plaza Sésamo
+Epi y Blas|Plaza Sésamo
+Coco|Plaza Sésamo
+Bob el Constructor
+Thomas|Thomas y sus amigos
+Pingu
+Peppa Pig
+Pocoyó
+Bluey
+Caillou
+Franklin
+Blue|Las pistas de Blue
+Mickey Mouse|La Casa de Mickey Mouse
+Handy Manny
+Sportacus|LazyTown
+Stephanie|LazyTown
+Robbie Rotten|LazyTown
+Clifford|El gran perro rojo
+Arthur
+Rolie Polie Olie
+Zenón|La Granja de Zenón
+La vaca Connie|La Granja de Zenón
+El gallo Kirico|La Granja de Zenón
+Zamba|Pakapaka
+Chase|Paw Patrol
+Marshall|Paw Patrol
+Skye|Paw Patrol
+Ladybug|Miraculous
+Cat Noir|Miraculous
+`);
+
+  add('disneych', '🎤', 'Disney Channel y series teen', `
+Hannah Montana|Disney Channel
+Lizzie McGuire|Disney Channel
+Kim Possible
+Ron Stoppable|Kim Possible
+Phineas|Phineas y Ferb
+Ferb|Phineas y Ferb
+Perry el ornitorrinco|Phineas y Ferb
+Doofenshmirtz|Phineas y Ferb
+Candace|Phineas y Ferb
+Alex Russo|Los Magos de Waverly Place
+Zack y Cody|Todo un hotel
+London Tipton|Todo un hotel
+Raven|Es tan Raven
+Phil del Futuro
+Troy Bolton|High School Musical
+Gabriella|High School Musical
+Sharpay|High School Musical
+Mitchie|Camp Rock
+Los Jonas Brothers
+Violetta
+León|Violetta
+Francesca|Violetta
+Drake Parker|Drake y Josh
+Josh Nichols|Drake y Josh
+Megan|Drake y Josh
+Carly|iCarly
+Sam|iCarly
+Freddie|iCarly
+Spencer|iCarly
+Zoey|Zoey 101
+Tori Vega|Victorious
+Malcolm|Malcolm el de en medio
+Wednesday Addams|Merlina
+`);
+
+  add('tv', '📼', 'Tele nostálgica (Argentina y Latam)', `
+El Chavo del 8
+El Chapulín Colorado
+Quico|El Chavo
+La Chilindrina|El Chavo
+Don Ramón|El Chavo
+Doña Florinda|El Chavo
+Profesor Jirafales|El Chavo
+Floricienta
+Patito Feo
+Mía Colucci|Rebelde Way
+Casi Ángeles
+Chiquititas
+Pepe Argento|Casados con hijos
+Kermit|Los Muppets
+Miss Piggy|Los Muppets
+Gonzo|Los Muppets
+Animal|Los Muppets
+El Zorro
+Mr. Bean
+MacGyver
+Power Ranger rojo|Power Rangers
+Power Ranger azul|Power Rangers
+Power Ranger rosa|Power Rangers
+Zordon|Power Rangers
+Los Locos Addams
+Kitt|El auto fantástico
+Lassie
+Chespirito
+Super Agente 86
+Titanes en el Ring
+`);
+
+  /* ============================ JUEGOS ============================ */
+
+  add('videojuegos', '🎮', 'Videojuegos clásicos', `
 Mario|Super Mario
 Luigi|Super Mario
 Princesa Peach|Super Mario
+Princesa Daisy|Super Mario
+Rosalina|Super Mario
 Bowser|Super Mario
+Bowsercito|Super Mario
 Toad|Super Mario
 Yoshi|Super Mario
 Donkey Kong
+Diddy Kong|Donkey Kong
 Wario|Super Mario
+Waluigi|Super Mario
 Goomba|Super Mario
 Koopa Troopa|Super Mario
+Bullet Bill|Super Mario
+Chain Chomp|Super Mario
+Boo|Super Mario
 Planta Piraña|Super Mario
 Hongo rojo|Super Mario
+Estrella de Mario|Super Mario
 Link|Zelda
 Zelda|The Legend of Zelda
 Ganondorf|Zelda
+Navi|Zelda
+Epona|Zelda
+Samus Aran|Metroid
+Fox McCloud|Star Fox
+Kirby
+Meta Knight|Kirby
+Pikmin
+Captain Falcon|F-Zero
+Isabelle|Animal Crossing
+Tom Nook|Animal Crossing
 Sonic|Sonic
 Tails|Sonic
 Knuckles|Sonic
-Dr. Eggman|Sonic
-Shadow|Sonic
 Amy Rose|Sonic
+Shadow|Sonic
+Silver|Sonic
+Dr. Eggman|Sonic
 Pac-Man
 Fantasma Blinky|Pac-Man
-Kirby
-Samus Aran|Metroid
-Fox McCloud|Star Fox
 Mega Man
 Ryu|Street Fighter
+Ken|Street Fighter
+Chun-Li|Street Fighter
 Sub-Zero|Mortal Kombat
 Scorpion|Mortal Kombat
+Liu Kang|Mortal Kombat
 Crash Bandicoot
 Spyro
-Lara Croft|Tomb Raider
-Master Chief|Halo
-Kratos|God of War
-Creeper|Minecraft
-Steve|Minecraft
-Tripulante|Among Us
-Fall Guy|Fall Guys
-Red|Angry Birds
-Flappy Bird
-Pieza de Tetris
-Cuphead
+Ratchet y Clank
+Jak y Daxter
+Sly Cooper
 Rayman
-Isabelle|Animal Crossing
-Sackboy|LittleBigPlanet
-Slime|Dragon Quest
+Lara Croft|Tomb Raider
+Kratos|God of War
+Nathan Drake|Uncharted
+Master Chief|Halo
+Solid Snake|Metal Gear
 Cloud Strife|Final Fantasy
-Noob|Roblox
-Joystick
-Game Boy
+Sackboy|LittleBigPlanet
+CJ|GTA San Andreas
+Sim|Los Sims
+Pieza de Tetris
+Invasor espacial|Space Invaders
+Bomberman
+Banjo y Kazooie
+Perro de Duck Hunt
 `);
 
-  add('peliculas', '🎬', 'Películas y series', `
+  add('apps', '📱', 'Videojuegos y apps modernos', `
+Steve|Minecraft
+Alex|Minecraft
+Creeper|Minecraft
+Enderman|Minecraft
+Jonesy|Fortnite
+Peely|Fortnite
+Llama|Fortnite
+Bus de batalla|Fortnite
+Tripulante|Among Us
+Impostor|Among Us
+Fall Guy|Fall Guys
+Noob|Roblox
+Rey|Clash Royale
+Bárbaro|Clash of Clans
+Shelly|Brawl Stars
+Colt|Brawl Stars
+Spike|Brawl Stars
+Red|Angry Birds
+Chuck|Angry Birds
+Bomb|Angry Birds
+Cerdito verde|Angry Birds
+Flappy Bird
+Lanzaguisantes|Plantas vs Zombies
+Girasol|Plantas vs Zombies
+Zombi con cono|Plantas vs Zombies
+Jake|Subway Surfers
+Pou
+Talking Tom
+Fruit Ninja
+Caramelo de Candy Crush
+Freddy Fazbear|Five Nights at Freddy's
+Sans|Undertale
+Cuphead
+Mugman|Cuphead
+Hollow Knight
+Auto de Rocket League
+Mii|Wii Sports
+Guitarra de Guitar Hero
+Pingüino|Club Penguin
+Pokébola|Pokémon GO
+Teemo|League of Legends
+Jett|Valorant
+Doomguy|Doom
+`);
+
+  add('juguetes', '🧩', 'Juguetes y juegos de la infancia', `
+Tamagotchi
+Trompo Beyblade
+Bakugan
+Cartas de Pokémon
+Cartas de Yu-Gi-Oh!
+Figuritas del Mundial
+Tazos
+Cubo de Rubik
+Yo-yo
+Lego
+Barbie
+Ken
+Bratz
+Hot Wheels
+Furby
+Peluche
+Muñeca
+Pistola de agua
+Barrilete
+Rompecabezas
+Dominó
+Ajedrez
+Jenga
+Estanciero
+TEG
+Twister
+Pizarra mágica
+Plastilina
+Slime
+Slinky
+Fidget spinner
+Pop it
+Huevo Kinder
+Pelota de fútbol
+Bolitas
+Rayuela
+Soga de saltar
+Escondidas
+Mancha
+Metegol
+Pelota de básquet
+Piñata
+Skate
+Patines
+`);
+
+  add('retro', '💾', 'Tecnología de los 2000', `
+Nokia 3310
+Celular con tapa
+Walkman
+Discman
+CD
+Casete
+Disquete
+Pendrive
+iPod
+MP3
+MSN Messenger
+Tele a tubo
+Videocasetera VHS
+DVD
+PlayStation 2
+Joystick de PlayStation
+Nintendo Wii
+Control de Wii
+Game Boy Advance
+Nintendo DS
+PSP
+Notebook vieja
+Mouse con bolita
+Cabina telefónica
+Teléfono a disco
+Cámara descartable
+Cámara digital
+Fax
+Radio a pilas
+`);
+
+  /* ============================ PELÍCULAS Y SERIES ============================ */
+
+  add('peliculas', '🎬', 'Películas', `
 Darth Vader|Star Wars
 Yoda|Star Wars
 Luke Skywalker|Star Wars
@@ -371,6 +894,10 @@ Princesa Leia|Star Wars
 Han Solo|Star Wars
 Chewbacca|Star Wars
 R2-D2|Star Wars
+C-3PO|Star Wars
+Obi-Wan Kenobi|Star Wars
+Anakin|Star Wars
+Darth Maul|Star Wars
 Stormtrooper|Star Wars
 Grogu|The Mandalorian
 Harry Potter
@@ -378,49 +905,101 @@ Hermione|Harry Potter
 Ron Weasley|Harry Potter
 Hagrid|Harry Potter
 Dumbledore|Harry Potter
+Snape|Harry Potter
+Draco Malfoy|Harry Potter
 Voldemort|Harry Potter
 Dobby|Harry Potter
+Hedwig|Harry Potter
 Gandalf|El Señor de los Anillos
 Frodo|El Señor de los Anillos
 Gollum|El Señor de los Anillos
 Legolas|El Señor de los Anillos
+Aragorn|El Señor de los Anillos
+Sauron|El Señor de los Anillos
 Jack Sparrow|Piratas del Caribe
+Davy Jones|Piratas del Caribe
 Indiana Jones
 James Bond
 Rocky Balboa
 Terminator
+Neo|Matrix
 Forrest Gump
 Marty McFly|Volver al Futuro
+Doc Brown|Volver al Futuro
 E.T.
+Kevin McCallister|Mi pobre angelito
+Mrs. Doubtfire
+Stanley Ipkiss|La Máscara
+Ace Ventura
+Jack Skellington|Pesadilla antes de Navidad
+Eduardo Manos de Tijera
+Willy Wonka
+Sombrerero Loco|Alicia en el País de las Maravillas
+Gato de Cheshire|Alicia en el País de las Maravillas
+Aslan|Las Crónicas de Narnia
+Optimus Prime|Transformers
+Bumblebee|Transformers
+Megatron|Transformers
+Dominic Toretto|Rápido y Furioso
 Tiranosaurio Rex|Jurassic Park
+Velociraptor|Jurassic Park
 King Kong
 Godzilla
 Tiburón|Tiburón
 Chucky
 Freddy Krueger
+Jason Voorhees
+Ghostface|Scream
 Pennywise|It
 Beetlejuice
-Willy Wonka
-Po|Kung Fu Panda
-Alex el león|Madagascar
-Scrat|La Era de Hielo
-Manny|La Era de Hielo
-Chimuelo|Cómo entrenar a tu dragón
+Edward Cullen|Crepúsculo
+Katniss Everdeen|Los Juegos del Hambre
+Jack Dawson|Titanic
+Joker|Película
+Barbie|Película
+Mad Max
+Gizmo|Gremlins
+Malvavisco gigante|Los Cazafantasmas
+Matilda
+Na'vi|Avatar
+Jumanji
+`);
+
+  add('seriestv', '📡', 'Series de TV', `
 Walter White|Breaking Bad
+Jesse Pinkman|Breaking Bad
+Pablo Escobar|Narcos
 Eleven|Stranger Things
+Dustin|Stranger Things
 Demogorgon|Stranger Things
-El Profesor|La Casa de Papel
-Merlina Addams|Merlina
 Jon Snow|Game of Thrones
 Daenerys|Game of Thrones
+Tyrion|Game of Thrones
+Arya Stark|Game of Thrones
+Dragón|Game of Thrones
+El Profesor|La Casa de Papel
+Tokio|La Casa de Papel
+Máscara de Dalí|La Casa de Papel
+Soldado rosa|El Juego del Calamar
+Muñeca gigante|El Juego del Calamar
+Merlina Addams|Merlina
 Sheldon Cooper|The Big Bang Theory
-Mr. Bean
-Charlie Chaplin|Charlot
-Neo|Matrix
-Barbie
-Mad Max
-Jack Dawson|Titanic
-Katniss Everdeen|Los Juegos del Hambre
+Chandler|Friends
+Joey|Friends
+Ross|Friends
+Rachel|Friends
+Monica|Friends
+Phoebe|Friends
+Michael Scott|The Office
+Dr. House
+Sherlock Holmes
+Michael Scofield|Prison Break
+Tommy Shelby|Peaky Blinders
+Humo negro|Lost
+Din Djarin|The Mandalorian
+Dexter Morgan|Dexter
+Los Simuladores
+Teen Wolf
 `);
 
   add('superheroes', '🦸', 'Superhéroes y villanos', `
@@ -430,12 +1009,28 @@ Wonder Woman|DC
 Flash|DC
 Aquaman|DC
 Linterna Verde|DC
+Flecha Verde|DC
+Shazam|DC
+Supergirl|DC
+Robin|DC
+Batichica|DC
+Cyborg|DC
 Joker|DC
 Harley Quinn|DC
-Robin|DC
 Catwoman|DC
+Pingüino|Batman
+Dos Caras|Batman
+Espantapájaros|Batman
+Hiedra Venenosa|Batman
+Mr. Frío|Batman
+Bane|Batman
 Lex Luthor|DC
+Darkseid|DC
 Spider-Man|Marvel
+Miles Morales|Spider-Man
+Duende Verde|Spider-Man
+Doctor Octopus|Spider-Man
+Venom|Spider-Man
 Iron Man|Marvel
 Capitán América|Marvel
 Thor|Marvel
@@ -446,144 +1041,263 @@ Pantera Negra|Marvel
 Doctor Strange|Marvel
 Capitana Marvel|Marvel
 Ant-Man|Marvel
-Wolverine|X-Men
-Deadpool|Marvel
+Bruja Escarlata|Marvel
+Visión|Marvel
+Falcon|Marvel
+Soldado del Invierno|Marvel
+Nick Fury|Marvel
 Thanos|Marvel
 Loki|Marvel
+Ultrón|Marvel
 Groot|Guardianes de la Galaxia
 Rocket|Guardianes de la Galaxia
-Venom|Marvel
+Star-Lord|Guardianes de la Galaxia
+Gamora|Guardianes de la Galaxia
+Drax|Guardianes de la Galaxia
+Wolverine|X-Men
 Magneto|X-Men
 Profesor X|X-Men
+Tormenta|X-Men
+Cíclope|X-Men
+Mística|X-Men
+Deadpool|Marvel
+Ghost Rider|Marvel
+Daredevil|Marvel
+Silver Surfer|Marvel
+Doctor Doom|Los 4 Fantásticos
 Mr. Fantástico|Los 4 Fantásticos
-Ultraman
+La Mole|Los 4 Fantásticos
 Hellboy
+Spawn
+Invencible
+Ultraman
+Capitán Cavernícola
 `);
 
-  add('fantasia', '🐉', 'Fantasía y monstruos', `
-Dragón
-Unicornio
-Hada
-Sirena
-Duende
-Gnomo
-Troll
-Ogro
-Elfo
-Mago
-Bruja
-Vampiro
-Momia
-Zombi
-Frankenstein
-Drácula
-Hombre lobo
-Fantasma
-Esqueleto
-Yeti
-Pie Grande
-Monstruo del Lago Ness
-Kraken
-Minotauro
-Cíclope
-Medusa
-Pegaso
-Ave Fénix
-Genio de la lámpara
-Esfinge
-Golem
-Gárgola
-Robot
-Alienígena
-OVNI
-Marciano
-Astronauta
-Cyborg
-Tiranosaurio Rex
-Triceratops
-Velociraptor
-Estegosaurio
-Pterodáctilo
-Mamut
-Tigre dientes de sable
-Hombre de las cavernas
-Caballero medieval
-Pirata
-Ninja
-Samurái
-Vikingo
-Gladiador romano
-Cowboy
-Princesa
-Rey
-Reina
-Príncipe
-Payaso
-Mago de circo
-Muñeco de nieve
-Papá Noel
-`);
+  /* ============================ GENTE REAL ============================ */
 
-  add('tv', '📼', 'TV infantil y nostalgia', `
-El Chavo del 8
-El Chapulín Colorado
-Quico|El Chavo
-La Chilindrina|El Chavo
-Kermit|Los Muppets
-Miss Piggy|Los Muppets
-Gonzo|Los Muppets
-Elmo|Plaza Sésamo
-Barney|El dinosaurio
-Tinky Winky|Teletubbies
-El Zorro
-Mr. Bean
-MacGyver
-Power Ranger rojo|Power Rangers
-Power Ranger azul|Power Rangers
-Los Locos Addams
-Kitt|El auto fantástico
-Lassie
-`);
-
-  add('famosos', '⭐', 'Famosos y deportistas', `
+  add('futbol', '⚽', 'Fútbol', `
 Lionel Messi
 Diego Maradona
 Dibu Martínez
 Ángel Di María|Fideo
+Julián Álvarez
+Lautaro Martínez
+Enzo Fernández
+Alexis Mac Allister
+Rodrigo De Paul
+Nicolás Otamendi
+Lionel Scaloni
+Juan Román Riquelme
+Gabriel Batistuta
+Carlos Tevez
+Sergio Agüero|Kun
+Javier Mascherano
+Gonzalo Higuaín
+Javier Zanetti
+Diego Simeone|Cholo
 Cristiano Ronaldo
 Neymar
 Kylian Mbappé
 Pelé
 Ronaldinho
+Ronaldo Nazário|El Fenómeno
 Zinedine Zidane
 Erling Haaland
-Michael Jordan
-LeBron James
-Manu Ginóbili
-Usain Bolt
-Roger Federer
-Rafael Nadal
-Novak Djokovic
-Serena Williams
-Lewis Hamilton
+Vinícius Jr.
+Jude Bellingham
+Lamine Yamal
+David Beckham
+Andrés Iniesta
+Kaká
+Zlatan Ibrahimović
+Mohamed Salah
+Robert Lewandowski
+Luka Modrić
+Karim Benzema
+Kevin De Bruyne
+Luis Suárez
+Iker Casillas
+Gianluigi Buffon
+Andrea Pirlo
+Wayne Rooney
+Thierry Henry
+Pep Guardiola
+José Mourinho
+Copa del Mundo
+Pelota de fútbol
+Camiseta de la Selección
+`);
+
+  add('deportistas', '🏅', 'Deportistas y luchadores', `
+Manu Ginóbili|Básquet
+Michael Jordan|Básquet
+Kobe Bryant|Básquet
+LeBron James|Básquet
+Shaquille O'Neal|Básquet
+Usain Bolt|Atletismo
+Michael Phelps|Natación
+Roger Federer|Tenis
+Rafael Nadal|Tenis
+Novak Djokovic|Tenis
+Juan Martín del Potro|Tenis
+Serena Williams|Tenis
+Michael Schumacher|Fórmula 1
+Lewis Hamilton|Fórmula 1
+Max Verstappen|Fórmula 1
+Franco Colapinto|Fórmula 1
+Juan Manuel Fangio|Fórmula 1
+Mike Tyson|Boxeo
+Muhammad Ali|Boxeo
+Floyd Mayweather|Boxeo
+Conor McGregor|UFC
+John Cena|WWE
+La Roca|WWE
+The Undertaker|WWE
+Rey Mysterio|WWE
+Triple H|WWE
+Randy Orton|WWE
+Hulk Hogan|WWE
+Luciana Aymar|Hockey
+Simone Biles|Gimnasia
+`);
+
+  add('musica', '🎵', 'Música', `
 Michael Jackson
 Elvis Presley
 Freddie Mercury
+John Lennon
 Bob Marley
-John Lennon|The Beatles
 Shakira
+Britney Spears
+Beyoncé
+Rihanna
+Lady Gaga
+Katy Perry
 Taylor Swift
+Justin Bieber
+Eminem
+Avril Lavigne
+Miley Cyrus
+Billie Eilish
+Ariana Grande
+Ed Sheeran
+Bruno Mars
+Daddy Yankee
+Ricky Martin
+Enrique Iglesias
+J Balvin
+Karol G
+Maluma
 Bad Bunny
-Bizarrap
-Charly García
+Backstreet Boys
+Spice Girls
+Linkin Park
+Green Day
 Gustavo Cerati
+Charly García
+Luis Alberto Spinetta
+Indio Solari
+Fito Páez
+Andrés Calamaro
+Mercedes Sosa
+Gilda
+La Mona Jiménez
+Duki
+Bizarrap
+Paulo Londra
+Trueno
+Wos
+Cazzu
+Nicki Nicole
+Lali Espósito
+Tini Stoessel
+Emilia Mernes
+María Becerra
+Milo J
+`);
+
+  add('famosos', '⭐', 'Famosos y personajes históricos', `
+Leonardo DiCaprio
+Johnny Depp
+Will Smith
+Jim Carrey
+Robert Downey Jr.
+Tom Cruise
+Ricardo Darín
+Guillermo Francella
 Susana Giménez
+Mirtha Legrand
+Marcelo Tinelli
+Peter Capusotto
+Charles Chaplin
 Albert Einstein
 Leonardo da Vinci
 Cleopatra
 Napoleón
 Frida Kahlo
 Papa Francisco
+Evita
+José de San Martín
+Manuel Belgrano
+Che Guevara
+Steve Jobs
+Mark Zuckerberg
+Elon Musk
+Shakespeare
+Mozart
+Beethoven
+Picasso
+Van Gogh
+Dalí
+Marie Curie
+Isaac Newton
+Colón
+Julio César
+`);
+
+  add('internet', '😎', 'Internet, memes y youtubers', `
+Doge
+Cheems
+Pepe la rana
+Trollface
+Gigachad
+Wojak
+Nyan Cat
+Rick Astley|Rickroll
+Baby Shark
+Psy|Gangnam Style
+Keyboard Cat
+Grumpy Cat
+Success Kid
+Forever Alone
+Cara de "Me gusta"|Rage comic
+Hide the Pain Harold
+Kermit tomando té
+Chico del pulgar arriba
+Mono pensando
+Perro en la casa en llamas|This is fine
+Pikachu sorprendido
+Sr. Cangrejo contando plata
+Emoji llorando de risa
+Emoji de la caca sonriente
+Emoji de la calavera
+Skibidi Toilet
+Ibai
+AuronPlay
+Rubius
+Vegetta777
+TheGrefg
+Willyrex
+Luisito Comunica
+MrBeast
+PewDiePie
+Coscu
+Spreen
+Davo Xeneize
+Momo
+Bizarrap con capucha
+Dibu bailando
 `);
 
   add('argentina', '🧉', 'Argentina', `
@@ -597,16 +1311,12 @@ Mate
 Termo
 Obelisco
 Bandera argentina
-Camiseta de la Selección
-Copa del Mundo
 Gaucho
 Pareja bailando tango
 Bombo
 Guitarra criolla
 Cataratas del Iguazú
 Glaciar Perito Moreno
-Evita
-José de San Martín
 Empanada
 Asado
 Choripán
@@ -623,129 +1333,184 @@ Kiosco
 Carpincho
 Yaguareté
 Cóndor
-Llama
 Pingüino
 Ballena franca
 Lobizón
+Bombilla
+Facturas
+Choclo
+La Bombonera
+El Monumental
 `);
+
+  /* ============================ MUNDO REAL ============================ */
 
   add('animales', '🐾', 'Animales', `
 Perro
+Perro salchicha
+Bulldog
+Husky
+Golden Retriever
+Chihuahua
 Gato
+Gato siamés
 Caballo
 Vaca
+Toro
 Cerdo
 Oveja
-Gallina
-Pato
+Cabra
+Burro
 Conejo
+Hámster
+Cobayo
+Pez dorado
+Canario
+Loro
+Cacatúa
+Gallina
+Gallo
+Pato
+Ganso
+Pavo
+Paloma
+Pavo real
+Cisne
+Flamenco
+Pelícano
+Gaviota
+Cigüeña
+Búho
+Lechuza
+Águila
+Halcón
+Buitre
+Pingüino
+Tucán
+Colibrí
+Pájaro carpintero
+Cuervo
+Avestruz
 Elefante
 Jirafa
 León
 Tigre
-Oso
+Oso pardo
+Oso polar
+Panda
+Koala
+Canguro
 Mono
+Orangután
 Gorila
+Chimpancé
+Lémur
+Perezoso
 Cebra
 Hipopótamo
 Rinoceronte
-Cocodrilo
-Tortuga
-Serpiente
-Rana
-Pez globo
-Tiburón
-Delfín
-Ballena
-Pulpo
-Medusa
-Cangrejo
-Estrella de mar
-Mariposa
-Abeja
-Hormiga
-Araña
-Mosquito
-Caracol
-Búho
-Águila
-Loro
-Pingüino
-Flamenco
-Pavo real
-Canguro
-Koala
-Panda
-Perezoso
-Murciélago
-Zorro
-Lobo
-Ardilla
-Erizo
-Castor
-Jabalí
 Camello
 Llama
 Alce
 Ciervo
-Foca
-Morsa
-Oso polar
-Hámster
-Mapache
+Zorro
+Lobo
 Hiena
 Guepardo
 Leopardo
 Pantera negra
-Ornitorrinco
 Suricata
-Tucán
-Colibrí
-Cisne
-Pelícano
-Gaviota
-Cuervo
-Sapo
+Mapache
+Ardilla
+Erizo
+Castor
+Jabalí
+Murciélago
+Ornitorrinco
+Foca
+Morsa
+Lobo marino
+Delfín
+Orca
+Ballena
+Cachalote
+Narval
+Tiburón
+Tiburón martillo
+Raya
+Pez globo
+Pez payaso
+Pez espada
+Caballito de mar
+Anguila
+Pulpo
+Calamar
+Medusa
+Cangrejo
+Langosta
+Estrella de mar
+Tortuga
+Tortuga marina
+Cocodrilo
+Serpiente
 Camaleón
 Iguana
+Dragón de Komodo
+Rana
+Sapo
+Salamandra
+Mariposa
+Abeja
+Avispa
+Hormiga
+Araña
 Escorpión
-Cucaracha
+Mosquito
 Mosca
+Cucaracha
 Libélula
 Luciérnaga
-Avestruz
-Gallo
-Pavo
-Burro
-Cabra
-Toro
-Caballito de mar
-Pez payaso
-Raya
-Langosta
-Orangután
-Lémur
-Narval
-Pez espada
+Mariquita
+Grillo
+Caracol
+Lombriz
+Carpincho
+Ñandú
+Cóndor
 `);
 
   add('comida', '🍕', 'Comida y bebida', `
 Pizza
 Hamburguesa
 Papas fritas
-Pancho|Hot dog
+Pancho
 Sushi
 Tacos
 Burrito
 Ramen
+Spaghetti
+Ravioles
+Lasagna
+Milanesa
+Empanada
+Asado
+Sándwich
+Tostado de jamón y queso
+Ensalada
+Sopa
+Huevo frito
+Tostadas
+Panqueque
+Waffle
+Pan
+Medialuna
+Alfajor
 Dona
 Cupcake
+Torta de cumpleaños
+Torta de chocolate
 Helado
-Chupetín
-Caramelo
-Chocolate
-Tostadas
-Huevo frito
+Helado de palito
 Banana
 Manzana
 Frutilla
@@ -756,6 +1521,10 @@ Uvas
 Pera
 Naranja
 Limón
+Cereza
+Coco
+Kiwi
+Mango
 Palta
 Zanahoria
 Tomate
@@ -767,28 +1536,53 @@ Ajo
 Hongo
 Morrón
 Lechuga
+Pepino
+Choclo
 Queso
 Jamón
-Waffle
-Panqueque
+Maní
 Café
+Mate
 Licuado
 Gaseosa
+Jugo de caja
+Chocolatada
 Cerveza
-Sándwich
-Spaghetti
-Ravioles
-Ensalada
-Pan
-Algodón de azúcar
-Torta de cumpleaños
-Cereza
-Coco
-Kiwi
-Mango
-Pepino
-Maní
+Copa de vino
+Leche
+`);
+
+  add('golosinas', '🍬', 'Golosinas y snacks', `
+Chicle
+Gomitas
+Chupetín
+Caramelos
+Chocolate
+Barra de chocolate
+Huevo Kinder
+Nutella
+Oreo
+Galletitas
+Papas fritas de paquete
+Chizitos
 Pochoclo
+Algodón de azúcar
+Helado de cucurucho
+Bombón
+Torta frita
+Dulce de leche
+Cajita feliz
+Cono de papas fritas
+Cereales
+Pan dulce
+Turrón
+Garrapiñadas
+Paleta helada
+Palito de la selva
+Churros
+Chocotorta
+Milkshake
+Gaseosa con pajita
 `);
 
   add('objetos', '🔧', 'Objetos de todos los días', `
@@ -923,6 +1717,14 @@ Grúa
 Camioneta
 Tren bala
 Auto antiguo
+Cuatriciclo
+Moto de agua
+Crucero
+Camión de helados
+DeLorean|Volver al Futuro
+Batimóvil|Batman
+Halcón Milenario|Star Wars
+Micro escolar
 `);
 
   add('profesiones', '👷', 'Profesiones', `
@@ -964,6 +1766,15 @@ Futbolista
 Cajera de supermercado
 Repartidor en bici
 Estatua viviente
+Youtuber
+Streamer
+Gamer
+DJ
+Arquero
+Chef
+Ninja
+Espía
+Vaquero
 `);
 
   add('lugares', '🏞️', 'Lugares y monumentos', `
@@ -1006,9 +1817,19 @@ Isla con palmera
 Estación de tren
 Obelisco
 Cataratas
+Hogwarts|Harry Potter
+Castillo de Disney
+Casa de Bob Esponja|Fondo de Bikini
+Casa de los Simpson
+Torre de los Titanes
+Pueblo Paleta|Pokémon
+Reino Champiñón|Super Mario
+Hyrule|Zelda
+Gotham City|Batman
+Aldea de Konoha|Naruto
 `);
 
-  add('deportes', '🏅', 'Deportes y juegos', `
+  add('deportes', '🎯', 'Deportes y juegos', `
 Jugando al fútbol
 Jugando al rugby
 Jugando al hockey
@@ -1040,24 +1861,135 @@ Gol de chilena
 Jugando a la PlayStation
 Jugando al pool
 Piloto de carreras
+Jugando al Mario Kart
+Jugando a la Wii
+Jugando al Pokémon
+Jugando a las figuritas
+Haciendo skate
+Jugando al vóley
+Jugando al handball
+Jugando al golf
 `);
 
-  add('memes', '😎', 'Memes y bichos de internet', `
-Doge
-Pepe la rana
-Nyan Cat
-Trollface
-Gigachad
-Baby Yoda
-Chico del pulgar arriba
-Mono pensando
-Perro en la casa en llamas|This is fine
-Wojak
-Pikachu sorprendido
-Cheems
-Rick Astley|Rickroll
-Emoji llorando de risa
-Emoji de la caca sonriente
+  add('fantasia', '🐉', 'Fantasía y monstruos', `
+Dragón
+Unicornio
+Hada
+Sirena
+Duende
+Gnomo
+Troll
+Ogro
+Elfo
+Mago
+Bruja
+Vampiro
+Momia
+Zombi
+Frankenstein
+Drácula
+Hombre lobo
+Fantasma
+Esqueleto
+Yeti
+Pie Grande
+Monstruo del Lago Ness
+Kraken
+Minotauro
+Cíclope
+Medusa
+Pegaso
+Ave Fénix
+Genio de la lámpara
+Esfinge
+Golem
+Gárgola
+Robot
+Alienígena
+OVNI
+Marciano
+Astronauta
+Cyborg
+Tiranosaurio Rex
+Triceratops
+Velociraptor
+Estegosaurio
+Pterodáctilo
+Mamut
+Tigre dientes de sable
+Hombre de las cavernas
+Caballero medieval
+Pirata
+Ninja
+Samurái
+Vikingo
+Gladiador romano
+Cowboy
+Princesa
+Rey
+Reina
+Príncipe
+Payaso
+Mago de circo
+Muñeco de nieve
+Calabaza de Halloween
+Hombre invisible
+Cerbero
+Hidra
+Basilisco
+Banshee
+`);
+
+  add('mitologia', '⚡', 'Dioses y mitología', `
+Zeus
+Poseidón
+Hades
+Atenea
+Apolo
+Artemisa
+Afrodita
+Ares
+Hermes
+Dionisio
+Hércules
+Perseo
+Teseo
+Ícaro
+Odiseo
+Aquiles
+Thor|Mitología nórdica
+Odín|Mitología nórdica
+Loki|Mitología nórdica
+Anubis|Egipto
+Ra|Egipto
+Momia egipcia
+Caballo de Troya
+`);
+
+  add('fiestas', '🎉', 'Fiestas y celebraciones', `
+Papá Noel
+Reno Rodolfo
+Duende de Navidad
+Árbol de Navidad
+Pesebre
+Pan dulce
+Muñeco de nieve
+Huevo de Pascua
+Conejo de Pascua
+Calabaza de Halloween
+Fantasma de Halloween
+Bruja de Halloween
+Torta de cumpleaños
+Piñata
+Globos de fiesta
+Regalo
+Cupido
+Corazón de San Valentín
+Brindis de Año Nuevo
+Fuegos artificiales
+Disfraz
+Sombrero de fiesta
+Carnaval
 `);
 
   add('escenas', '🎭', 'Escenas y situaciones', `
@@ -1089,6 +2021,14 @@ Una familia mirando la tele
 El cumpleaños de un nene
 Un pibe pateando una pelota
 Una abuela cocinando
+Pikachu en el colectivo
+Goku haciendo un asado
+Bob Esponja jugando al fútbol
+Mario manejando un colectivo
+Messi jugando con Mickey
+Los Simpson en el Obelisco
+Shrek tomando mate
+Sonic corriendo la maratón
 `);
 
   window.DIBUS_CATS = R;
